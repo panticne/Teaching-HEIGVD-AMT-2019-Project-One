@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="payara">
+    <output-path>$PROJECT_DIR$/../../payara5</output-path>
+    <root id="root" />
+  </artifact>
+</component>
