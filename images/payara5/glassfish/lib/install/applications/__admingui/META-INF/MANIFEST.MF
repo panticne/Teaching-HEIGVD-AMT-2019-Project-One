@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.4
+Created-By: 1.8.0_222-b05 (Oracle Corporation)
+Glassfish-require-services: org.glassfish.api.admingui.ConsoleProvider
+HK2-Import-Bundles: fish.payara.admingui.console-common,org.glassfish.
+ hk2.hk2,fish.payara.admingui.console-plugin-service, org.glassfish.ma
+ in.deployment.deployment-client, jakarta.servlet-api, javax.servlet.j
+ sp-api, com.sun.el.javax.el, com.sun.jsftemplating, fish.payara.admin
+ gui.dataprovider, com.sun.pkg.client 
+
