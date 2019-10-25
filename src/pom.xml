@@ -24,10 +24,16 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-web-api</artifactId>
+      <version>7.0</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
 
   <build>
-    <finalName>1</finalName>
+    <finalName>Project-One</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
