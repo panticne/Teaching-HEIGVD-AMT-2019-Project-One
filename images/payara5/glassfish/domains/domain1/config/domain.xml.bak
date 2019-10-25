@@ -69,7 +69,6 @@
     <server config-ref="server-config" name="server">
       <application-ref ref="__admingui" virtual-servers="__asadmin"></application-ref>
       <application-ref ref="Project-One-1.0-SNAPSHOT" virtual-servers="server"></application-ref>
-      <application-ref ref="Project-One" virtual-servers="server"></application-ref>
       <resource-ref ref="jdbc/__TimerPool"></resource-ref>
       <resource-ref ref="jdbc/__default"></resource-ref>
       <resource-ref ref="jdbc/__derby"></resource-ref>
@@ -546,19 +545,6 @@
       <property name="org.glassfish.ejb.container.application_unique_id" value="103023169026195456"></property>
       <property name="defaultAppName" value="Project-One-1.0-SNAPSHOT"></property>
       <module name="Project-One-1.0-SNAPSHOT">
-        <engine sniffer="cdi"></engine>
-        <engine sniffer="ejb"></engine>
-        <engine sniffer="security"></engine>
-        <engine sniffer="web"></engine>
-      </module>
-    </application>
-    <application deployment-time="8574" context-root="/Project-One" object-type="user" name="Project-One" directory-deployed="true" location="file:/home/panticne/Documents/AMT/Teaching-HEIGVD-AMT-2019-Project-One/src/target/Project-One/" time-deployed="1572011851689">
-      <property name="archiveType" value="war"></property>
-      <property name="cdiDevModeEnabled" value="false"></property>
-      <property name="appLocation" value="file:/home/panticne/Documents/AMT/Teaching-HEIGVD-AMT-2019-Project-One/src/target/Project-One/"></property>
-      <property name="org.glassfish.ejb.container.application_unique_id" value="103023368175157248"></property>
-      <property name="defaultAppName" value="Project-One"></property>
-      <module name="Project-One">
         <engine sniffer="cdi"></engine>
         <engine sniffer="ejb"></engine>
         <engine sniffer="security"></engine>
