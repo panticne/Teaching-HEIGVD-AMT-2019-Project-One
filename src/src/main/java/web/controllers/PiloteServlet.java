@@ -1,4 +1,4 @@
-package web;
+package web.controllers;
 
 import services.dao.PiloteDAO;
 import services.dao.PiloteDAOLocal;
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class TestServlet extends HttpServlet{
+public class PiloteServlet extends HttpServlet{
 
     @EJB
     private PiloteDAOLocal piloteDAO;

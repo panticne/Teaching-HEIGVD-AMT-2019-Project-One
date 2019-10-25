@@ -1,4 +1,4 @@
-/* AUTOMATICALLY GENERATED ON Fri Oct 25 16:44:32 CEST 2019*/
+/* AUTOMATICALLY GENERATED ON Fri Oct 25 17:21:49 CEST 2019*/
 /* DO NOT EDIT */
 
 grant {
@@ -7,9 +7,10 @@ grant {
 };
 
 grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "AvionServlet", "**";
   permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
   permission javax.security.jacc.WebRoleRefPermission "", "**";
-  permission javax.security.jacc.WebRoleRefPermission "TestServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "PiloteServlet", "**";
   permission javax.security.jacc.WebRoleRefPermission "FacesServlet", "**";
   permission javax.security.jacc.WebRoleRefPermission "default", "**";
 };

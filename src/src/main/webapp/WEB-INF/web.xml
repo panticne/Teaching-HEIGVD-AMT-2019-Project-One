@@ -2,11 +2,20 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-    <servlet-name>TestServlet</servlet-name>
-    <servlet-class>web.TestServlet</servlet-class>
+    <servlet-name>PiloteServlet</servlet-name>
+    <servlet-class>web.controllers.PiloteServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>TestServlet</servlet-name>
+    <servlet-name>PiloteServlet</servlet-name>
     <url-pattern>/pilote/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AvionServlet</servlet-name>
+    <servlet-class>web.controllers.AvionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AvionServlet</servlet-name>
+    <url-pattern>/avion/*</url-pattern>
   </servlet-mapping>
 </web-app>

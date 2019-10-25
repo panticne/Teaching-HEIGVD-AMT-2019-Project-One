@@ -1,11 +1,13 @@
-/* AUTOMATICALLY GENERATED ON Fri Oct 25 16:44:32 CEST 2019*/
+/* AUTOMATICALLY GENERATED ON Fri Oct 25 17:21:49 CEST 2019*/
 /* DO NOT EDIT */
 
 grant {
   permission javax.security.jacc.EJBMethodPermission "PiloteDAO", "getAllPilotes,Local,";
+  permission javax.security.jacc.EJBMethodPermission "AvionDAO", "getAllPlane,Local,";
 };
 
 grant      principal * * {
   permission javax.security.jacc.EJBRoleRefPermission "PiloteDAO", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "AvionDAO", "**";
 };
 

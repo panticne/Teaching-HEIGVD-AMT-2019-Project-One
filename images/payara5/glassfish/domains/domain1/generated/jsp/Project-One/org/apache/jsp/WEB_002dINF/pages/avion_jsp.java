@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class pilote_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class avion_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -56,16 +56,16 @@ public final class pilote_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("<html>\n");
       out.write("<head>\n");
-      out.write("    <title>Pilote</title>\n");
+      out.write("    <title>Avions</title>\n");
       out.write("</head>\n");
       out.write("<body>\n");
-      out.write("    <h1>actors</h1>\n");
-      out.write("    <table>\n");
-      out.write("        ");
+      out.write("<h1>Avions</h1>\n");
+      out.write("<table>\n");
+      out.write("    ");
       if (_jspx_meth_c_forEach_0(_jspx_page_context))
         return;
       out.write("\n");
-      out.write("    </table>\n");
+      out.write("</table>\n");
       out.write("</body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
@@ -89,23 +89,26 @@ public final class pilote_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_forEach_0.setPageContext(_jspx_page_context);
     _jspx_th_c_forEach_0.setParent(null);
-    _jspx_th_c_forEach_0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pilotes}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
-    _jspx_th_c_forEach_0.setVar("pilote");
+    _jspx_th_c_forEach_0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${avions}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_0.setVar("avion");
     int[] _jspx_push_body_count_c_forEach_0 = new int[] { 0 };
     try {
       int _jspx_eval_c_forEach_0 = _jspx_th_c_forEach_0.doStartTag();
       if (_jspx_eval_c_forEach_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
           out.write("\n");
-          out.write("            <tr>\n");
-          out.write("                <td>");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pilote.firstname}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("        <tr>\n");
+          out.write("            <td>");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${avion.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("</td>\n");
-          out.write("                <td>");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pilote.lastname}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("            <td>");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${avion.company}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("</td>\n");
-          out.write("            </tr>\n");
-          out.write("        ");
+          out.write("            <td>");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${avion.type}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</td>\n");
+          out.write("        </tr>\n");
+          out.write("    ");
           int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
