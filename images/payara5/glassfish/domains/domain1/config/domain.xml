@@ -552,11 +552,11 @@
         <engine sniffer="web"></engine>
       </module>
     </application>
-    <application deployment-time="1659" context-root="/Project-One" object-type="user" name="Project-One" directory-deployed="true" location="file:/home/panticne/Documents/AMT/Teaching-HEIGVD-AMT-2019-Project-One/src/target/Project-One/" time-deployed="1572016909290">
+    <application deployment-time="1795" context-root="/Project-One" object-type="user" name="Project-One" directory-deployed="true" location="file:/home/panticne/Documents/AMT/Teaching-HEIGVD-AMT-2019-Project-One/src/target/Project-One/" time-deployed="1572272075801">
       <property name="archiveType" value="war"></property>
       <property name="cdiDevModeEnabled" value="false"></property>
       <property name="appLocation" value="file:/home/panticne/Documents/AMT/Teaching-HEIGVD-AMT-2019-Project-One/src/target/Project-One/"></property>
-      <property name="org.glassfish.ejb.container.application_unique_id" value="103023695912697856"></property>
+      <property name="org.glassfish.ejb.container.application_unique_id" value="103040422138544128"></property>
       <property name="defaultAppName" value="Project-One"></property>
       <module name="Project-One">
         <engine sniffer="cdi"></engine>
