@@ -20,11 +20,11 @@ public class AvionDAO implements AvionDAOLocal {
         List<Avion> planes = new ArrayList<>();
         try {
             Connection connection = dataSource.getConnection();
-            PreparedStatement pstmt = connection.prepareStatement("SELECT * FROM Avion");
+            PreparedStatement pstmt = connection.prepareStatement("SELECT * FROM avion");
             ResultSet rs = pstmt.executeQuery();
 
             while(rs.next()){
-                planes.add(new Avion(rs.getInt("id"),rs.getString("Compagnie"), rs.getString("Type")));
+                planes.add(new Avion(rs.getInt("id"),rs.getString("compagnie"), rs.getString("type")));
             }
             connection.close();
         }catch(Exception e){

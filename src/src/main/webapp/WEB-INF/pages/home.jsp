@@ -5,12 +5,14 @@
   Time: 17:41
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
-<head>
-    <title>$Title$</title>
-</head>
-<body>
-$END$
+<h2>Welcome to the demo app!</h2>
+
+<div class="alert alert-info" role="alert">
+    You are logged in as ${principal}.
+</div>
+
 </body>
 </html>

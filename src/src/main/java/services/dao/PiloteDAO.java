@@ -8,6 +8,7 @@ import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +17,26 @@ public class PiloteDAO implements PiloteDAOLocal {
 
     @Resource(lookup = "jdbc/dbVol")
     private DataSource dataSource;
+    public int registerPilote(Pilote pilote) throws ClassNotFoundException, SQLException {
+       String INSERT_PILOTE_SQL = "INSERT INTO pilote (prenom,nom,pseudo,motdepasse) VALUES (?, ?, ?, ?);";
+
+       int result = 0;
+
+        Connection connection = dataSource.getConnection();
+        PreparedStatement pstmt = connection.prepareStatement(INSERT_PILOTE_SQL);
+
+        pstmt.setString(1,pilote.getPrenom());
+        pstmt.setString(2,pilote.getNom());
+        pstmt.setString(3,pilote.getPseudo());
+        pstmt.setString(4,pilote.getMotdepasse());
+
+        result = pstmt.executeUpdate();
+
+        return result;
+
+    }
+
+
     public List<Pilote> getAllPilotes(){
         List<Pilote> pilotes = new ArrayList<>();
         try {
@@ -24,7 +45,7 @@ public class PiloteDAO implements PiloteDAOLocal {
             ResultSet rs = pstmt.executeQuery();
 
             while(rs.next()){
-                pilotes.add(new Pilote(rs.getString("firstname"), rs.getString("lastname")));
+                pilotes.add(new Pilote(rs.getString("prenom"), rs.getString("nom"),rs.getString("pseudo"),rs.getString("motdepasse")));
             }
             connection.close();
         }catch(Exception e){

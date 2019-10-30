@@ -17,7 +17,7 @@
     <c:forEach items="${avions}" var="avion">
         <tr>
             <td>${avion.id}</td>
-            <td>${avion.company}</td>
+            <td>${avion.compagnie}</td>
             <td>${avion.type}</td>
         </tr>
     </c:forEach>

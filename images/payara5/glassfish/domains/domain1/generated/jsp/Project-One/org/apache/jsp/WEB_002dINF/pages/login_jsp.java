@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -43,15 +43,30 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\n");
       out.write("\n");
-      out.write("\n");
       out.write("<html>\n");
-      out.write("<h2>Welcome to the demo app!</h2>\n");
+      out.write("<head>\n");
+      out.write("    <title>Login</title>\n");
+      out.write("</head>\n");
+      out.write("<body>\n");
       out.write("\n");
-      out.write("<div class=\"alert alert-info\" role=\"alert\">\n");
-      out.write("    You are logged in as ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${principal}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write(".\n");
-      out.write("</div>\n");
+      out.write("<div class=\"container\">\n");
+      out.write("\n");
+      out.write("    <form method=\"POST\" action=\"auth\" class=\"form-signin\">\n");
+      out.write("        <h2 class=\"form-signin-heading\">Please sign in</h2>\n");
+      out.write("        <label for=\"inputEmail\" class=\"sr-only\">Email address</label>\n");
+      out.write("        <input type=\"hidden\" name=\"action\" value=\"login\">\n");
+      out.write("        <input type=\"hidden\" name=\"targetUrl\" value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${targetUrl}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\">\n");
+      out.write("        <input type=\"email\" name=\"email\" id=\"inputEmail\" class=\"form-control\" placeholder=\"Email address\" required autofocus>\n");
+      out.write("        <label for=\"inputPassword\" class=\"sr-only\">Password</label>\n");
+      out.write("        <input type=\"password\" name =\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Password\" required>\n");
+      out.write("        <button id=\"bSignIn\" class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">Sign in</button>\n");
+      out.write("    </form>\n");
+      out.write("    <form method=\"GET\" action=\"/Project-One/pages/register\" class=\"form-signin\">\n");
+      out.write("        <button id=\"bRegister\" class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">Sign in</button>\n");
+      out.write("    </form>\n");
+      out.write("</div> <!-- /container -->\n");
       out.write("\n");
       out.write("</body>\n");
       out.write("</html>\n");

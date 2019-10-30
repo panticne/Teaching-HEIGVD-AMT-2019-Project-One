@@ -12,7 +12,7 @@
     <title>Pilote</title>
 </head>
 <body>
-    <h1>actors</h1>
+    <h1>pilotes</h1>
     <table>
         <c:forEach items="${pilotes}" var="pilote">
             <tr>
