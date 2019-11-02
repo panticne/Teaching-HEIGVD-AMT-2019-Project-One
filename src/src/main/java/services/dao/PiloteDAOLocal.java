@@ -10,4 +10,5 @@ import java.util.List;
 public interface PiloteDAOLocal {
     public List<Pilote> getAllPilotes();
     public int registerPilote(Pilote pilote) throws ClassNotFoundException, SQLException;
+    public boolean loginControl(String pseudo, String motdepasse)throws ClassNotFoundException, SQLException;
 }

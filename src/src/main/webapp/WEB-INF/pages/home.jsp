@@ -11,7 +11,7 @@
 <h2>Welcome to the demo app!</h2>
 
 <div class="alert alert-info" role="alert">
-    You are logged in as ${principal}.
+    Welcome to our wonderful website <%=request.getAttribute("pseudo") %>
 </div>
 
 </body>

@@ -14,16 +14,18 @@
 
 <div class="container">
 
-    <form method="POST" action="auth" class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="hidden" name="action" value="login">
-        <input type="hidden" name="targetUrl" value="${targetUrl}">
-        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" name ="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <button id="bSignIn" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-    </form>
+    <form action="/Project-One/pages/login" method="post">
+        <table style="with: 50%">
+            <tr>
+                <td>Pseudo</td>
+                <td><input type="text" name="pseudo" required/></td>
+            </tr>
+            <tr>
+                <td>Mot de passe</td>
+                <td><input type="password" name="motdepasse" required/></td>
+            </tr>
+        </table>
+        <input type="submit" value="Login" /></form>
     <form method="GET" action="/Project-One/pages/register" class="form-signin">
         <button id="bRegister" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     </form>

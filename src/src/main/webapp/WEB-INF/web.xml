@@ -37,4 +37,13 @@
     <servlet-name>Registration</servlet-name>
     <url-pattern>/pages/register</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>web.controllers.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/pages/login</url-pattern>
+  </servlet-mapping>
 </web-app>

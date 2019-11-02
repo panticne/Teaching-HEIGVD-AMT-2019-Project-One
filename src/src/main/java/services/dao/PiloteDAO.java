@@ -54,4 +54,32 @@ public class PiloteDAO implements PiloteDAOLocal {
 
         return pilotes;
     }
+
+    public boolean loginControl(String pseudo2, String motdepasse) throws SQLException {
+        String INSERT_PILOTE_SQL = "SELECT pseudo,motdepasse FROM pilote WHERE pseudo =?";
+        String pseudoDB = null;
+        String mdpDB = null;
+        boolean result = true;
+
+
+        Connection connection = dataSource.getConnection();
+        PreparedStatement pstmt = connection.prepareStatement(INSERT_PILOTE_SQL);
+        pstmt.setString(1,pseudo2);
+
+        ResultSet resultatRequete = pstmt.executeQuery();
+
+        while (resultatRequete.next()){
+             pseudoDB = resultatRequete.getString("pseudo");
+             mdpDB =resultatRequete.getString("motdepasse");
+        }
+
+
+        if(pseudo2.equals(pseudoDB) && motdepasse.equals(mdpDB)){
+            result = true;
+        }else{
+            result = false;
+        }
+
+        return result;
+    }
 }
