@@ -51,7 +51,7 @@
 <!DOCTYPE client-container PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Application Client Container//EN" "http://glassfish.org/dtds/glassfish-application-client-container_1_3.dtd">
 
 <client-container>
-  <target-server name="asroth" address="localhost" port="3700"/>
+  <target-server name="ubuntu" address="localhost" port="3700"/>
   <log-service file="" level="WARNING"/>
   <message-security-config auth-layer="SOAP">
     <!-- turned off by default -->

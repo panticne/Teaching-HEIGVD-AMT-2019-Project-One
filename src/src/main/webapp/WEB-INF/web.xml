@@ -2,15 +2,6 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-    <servlet-name>PiloteServlet</servlet-name>
-    <servlet-class>web.controllers.PiloteServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>PiloteServlet</servlet-name>
-    <url-pattern>/pilote/*</url-pattern>
-  </servlet-mapping>
-
-  <servlet>
     <servlet-name>AvionServlet</servlet-name>
     <servlet-class>web.controllers.AvionServlet</servlet-class>
   </servlet>
@@ -45,5 +36,50 @@
   <servlet-mapping>
     <servlet-name>Login</servlet-name>
     <url-pattern>/pages/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>MesVols</servlet-name>
+    <servlet-class>web.controllers.MesVolsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MesVols</servlet-name>
+    <url-pattern>/pages/mesVols</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>MyAccount</servlet-name>
+    <servlet-class>web.controllers.MyAccountServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyAccount</servlet-name>
+    <url-pattern>/pages/myAccount</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ChangePwd</servlet-name>
+    <servlet-class>web.controllers.ChangerMdpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangePwd</servlet-name>
+    <url-pattern>/pages/changerMdp</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ModifierVol</servlet-name>
+    <servlet-class>web.controllers.ModifierVolServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifierVol</servlet-name>
+    <url-pattern>/pages/modifierVol</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>web.controllers.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/pages/logout</url-pattern>
   </servlet-mapping>
 </web-app>

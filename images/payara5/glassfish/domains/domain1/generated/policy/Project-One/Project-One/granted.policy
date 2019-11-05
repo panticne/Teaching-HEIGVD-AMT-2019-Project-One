@@ -1,4 +1,4 @@
-/* AUTOMATICALLY GENERATED ON Wed Oct 30 17:28:58 CET 2019*/
+/* AUTOMATICALLY GENERATED ON Tue Nov 05 22:09:49 CET 2019*/
 /* DO NOT EDIT */
 
 grant {
@@ -7,13 +7,18 @@ grant {
 };
 
 grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "MesVols", "**";
+  permission javax.security.jacc.WebRoleRefPermission "HomeServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "MyAccount", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
   permission javax.security.jacc.WebRoleRefPermission "AvionServlet", "**";
   permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
-  permission javax.security.jacc.WebRoleRefPermission "", "**";
-  permission javax.security.jacc.WebRoleRefPermission "HomeServlet", "**";
-  permission javax.security.jacc.WebRoleRefPermission "PiloteServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "ModifierVol", "**";
+  permission javax.security.jacc.WebRoleRefPermission "Logout", "**";
   permission javax.security.jacc.WebRoleRefPermission "FacesServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "ChangePwd", "**";
   permission javax.security.jacc.WebRoleRefPermission "Registration", "**";
-  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+  permission javax.security.jacc.WebRoleRefPermission "Login", "**";
 };
 

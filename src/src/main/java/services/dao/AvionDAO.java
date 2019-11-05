@@ -16,6 +16,7 @@ public class AvionDAO implements AvionDAOLocal {
 
     @Resource(lookup = "jdbc/dbVol")
     private DataSource dataSource;
+
     public List<Avion> getAllPlane(){
         List<Avion> planes = new ArrayList<>();
         try {
@@ -32,5 +33,22 @@ public class AvionDAO implements AvionDAOLocal {
         }
 
         return planes;
+    }
+
+    public Avion getAvionById(int id){
+        Avion avion = null;
+        try {
+            Connection connection = dataSource.getConnection();
+            PreparedStatement pstmt = connection.prepareStatement("SELECT * FROM avion WHERE id = ?");
+            pstmt.setInt(1, id);
+            ResultSet rs = pstmt.executeQuery();
+
+            avion = new Avion(rs.getInt("id"), rs.getString("compagnie"), rs.getString("type"));
+            connection.close();
+        }catch(Exception e){
+
+        }
+
+        return avion;
     }
 }

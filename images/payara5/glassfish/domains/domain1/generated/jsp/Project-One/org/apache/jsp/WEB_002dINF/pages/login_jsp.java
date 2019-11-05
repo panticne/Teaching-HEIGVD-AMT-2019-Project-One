@@ -11,6 +11,11 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List<String> _jspx_dependants;
 
+  static {
+    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants.add("/WEB-INF/pages/includes/footer.jsp");
+  }
+
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
   public java.util.List<String> getDependants() {
@@ -30,7 +35,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext _jspx_page_context = null;
 
     try {
-      response.setContentType("text/html;charset=UTF-8");
+      response.setContentType("text/html");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -42,32 +47,38 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\n");
-      out.write("\n");
       out.write("<html>\n");
       out.write("<head>\n");
       out.write("    <title>Login</title>\n");
+      out.write("    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css\">\n");
+      out.write("    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js\"></script>\n");
+      out.write("    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js\"></script>\n");
       out.write("</head>\n");
       out.write("<body>\n");
+      out.write("    <div class=\"container\">\n");
+      out.write("        <div class=\"jumbotron text-center\">\n");
+      out.write("            <h1>Login</h1>\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"row justify-content-md-center\">\n");
+      out.write("            <div class=\"col-sm-4\"></div>\n");
+      out.write("            <div class=\"col-sm-4\">\n");
+      out.write("                <form action=\"/Project-One/pages/login\" method=\"post\">\n");
+      out.write("                    <input class=\"form-control input-lg\" placeholder=\"Username\" type=\"text\" name=\"pseudo\" required/>\n");
+      out.write("                    <input class=\"form-control input-lg\" placeholder=\"Password\" type=\"password\" name=\"motdepasse\" required/>\n");
+      out.write("                    <input class=\"btn btn-lg btn-primary btn-block\" type=\"submit\" value=\"Login\" />\n");
+      out.write("                    <a class=\"btn btn-lg btn-primary btn-block\" href=\"/Project-One/pages/register\"> Register</a>\n");
+      out.write("                </form>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("        ");
       out.write("\n");
-      out.write("<div class=\"container\">\n");
+      out.write("<footer class=\"footer\">\n");
+      out.write("    <div class=\"container text-center\">\n");
+      out.write("        <small>Copyright &copy; Your Website</small>\n");
+      out.write("    </div>\n");
+      out.write("</footer>");
       out.write("\n");
-      out.write("    <form method=\"POST\" action=\"auth\" class=\"form-signin\">\n");
-      out.write("        <h2 class=\"form-signin-heading\">Please sign in</h2>\n");
-      out.write("        <label for=\"inputEmail\" class=\"sr-only\">Email address</label>\n");
-      out.write("        <input type=\"hidden\" name=\"action\" value=\"login\">\n");
-      out.write("        <input type=\"hidden\" name=\"targetUrl\" value=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${targetUrl}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("\">\n");
-      out.write("        <input type=\"email\" name=\"email\" id=\"inputEmail\" class=\"form-control\" placeholder=\"Email address\" required autofocus>\n");
-      out.write("        <label for=\"inputPassword\" class=\"sr-only\">Password</label>\n");
-      out.write("        <input type=\"password\" name =\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Password\" required>\n");
-      out.write("        <button id=\"bSignIn\" class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">Sign in</button>\n");
-      out.write("    </form>\n");
-      out.write("    <form method=\"GET\" action=\"/Project-One/pages/register\" class=\"form-signin\">\n");
-      out.write("        <button id=\"bRegister\" class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">Sign in</button>\n");
-      out.write("    </form>\n");
-      out.write("</div> <!-- /container -->\n");
-      out.write("\n");
+      out.write("    </div>\n");
       out.write("</body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {

@@ -29,7 +29,7 @@ public class SecurityFilter implements Filter {
         String main = (String) httpRequest.getSession().getAttribute("main");
         if(main == null && isProtected){
 
-            request.getRequestDispatcher("/WEB-INF/èages/login.jsp").forward(request,response);
+            request.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(request,response);
 
         }else{
 

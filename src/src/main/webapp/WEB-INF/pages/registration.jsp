@@ -4,29 +4,28 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Guru Registration Form</title>
+    <title>Inscription</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-<h1>Inscription</h1>
-<form action="/Project-One/pages/register" method="post">
-    <table style="with: 50%">
-        <tr>
-            <td>Prénom</td>
-            <td><input type="text" name="prenom" required /></td>
-        </tr>
-        <tr>
-            <td>Nom</td>
-            <td><input type="text" name="nom" required /></td>
-        </tr>
-        <tr>
-            <td>Pseudo</td>
-            <td><input type="text" name="pseudo" required/></td>
-        </tr>
-        <tr>
-            <td>Mot de passe</td>
-            <td><input type="password" name="motdepasse" required/></td>
-        </tr>
-    </table>
-    <input type="submit" value="Submit" /></form>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Inscription</h1>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <form action="/Project-One/pages/register" method="post">
+                    <input class="form-control input-lg" placeholder="Prénom" type="text" name="prenom" required />
+                    <input class="form-control input-lg" placeholder="Nom" type="text" name="nom" required />
+                    <input class="form-control input-lg" placeholder="Pseudo" type="text" name="pseudo" required/>
+                    <input class="form-control input-lg" placeholder="Mot de passe" type="password" name="motdepasse" required/>
+                    <input class="btn btn-lg btn-primary btn-block" type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

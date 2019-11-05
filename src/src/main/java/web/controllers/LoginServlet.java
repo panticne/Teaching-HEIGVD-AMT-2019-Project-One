@@ -7,6 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
@@ -21,7 +22,9 @@ public class LoginServlet extends HttpServlet {
         String motdepasse = req.getParameter("motdepasse");
         try {
             if(piloteDAO.loginControl(pseudo,motdepasse)){
-                req.setAttribute("pseudo", pseudo); //with setAttribute() you can define a "key" and value pair so that you can get it in future using getAttribute("key")
+                HttpSession session = req.getSession();
+                int piloteId = piloteDAO.getPiloteId(pseudo, motdepasse);
+                session.setAttribute("id", piloteId);
                 req.getRequestDispatcher("/WEB-INF/pages/home.jsp").forward(req, resp);
             }else{
                 req.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(req, resp);
@@ -31,7 +34,11 @@ public class LoginServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        req.getRequestDispatcher("/WEB-INF/pages/home.jsp");
+    }
 
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        request.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(request, response);
     }
 }

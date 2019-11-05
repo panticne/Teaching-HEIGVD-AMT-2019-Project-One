@@ -1,5 +1,8 @@
 package model;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Pilote {
     private final String prenom;
     private final String nom;

@@ -5,31 +5,30 @@
   Time: 16:45
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-<div class="container">
-
-    <form action="/Project-One/pages/login" method="post">
-        <table style="with: 50%">
-            <tr>
-                <td>Pseudo</td>
-                <td><input type="text" name="pseudo" required/></td>
-            </tr>
-            <tr>
-                <td>Mot de passe</td>
-                <td><input type="password" name="motdepasse" required/></td>
-            </tr>
-        </table>
-        <input type="submit" value="Login" /></form>
-    <form method="GET" action="/Project-One/pages/register" class="form-signin">
-        <button id="bRegister" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-    </form>
-</div> <!-- /container -->
-
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Login</h1>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <form action="/Project-One/pages/login" method="post">
+                    <input class="form-control input-lg" placeholder="Username" type="text" name="pseudo" required/>
+                    <input class="form-control input-lg" placeholder="Password" type="password" name="motdepasse" required/>
+                    <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login" />
+                    <a class="btn btn-lg btn-primary btn-block" href="/Project-One/pages/register"> Register</a>
+                </form>
+            </div>
+        </div>
+        <%@include file="includes/footer.jsp"%>
+    </div>
 </body>
 </html>

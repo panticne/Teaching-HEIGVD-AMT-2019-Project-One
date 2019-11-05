@@ -1,15 +1,15 @@
-<domain application-root="${com.sun.aas.instanceRoot}/applications" version="252" log-root="${com.sun.aas.instanceRoot}/logs">
+<domain application-root="${com.sun.aas.instanceRoot}/applications" version="275" log-root="${com.sun.aas.instanceRoot}/logs">
   <hazelcast-runtime-configuration></hazelcast-runtime-configuration>
   <security-configurations>
     <authentication-service default="true" name="adminAuth" use-password-credential="true">
       <security-provider provider-name="adminSpc" name="spcrealm" type="LoginModule">
-        <login-module-config module-class="com.sun.enterprise.admin.util.AdminLoginModule" control-flag="sufficient" name="adminSpecialLM">
+        <login-module-config control-flag="sufficient" module-class="com.sun.enterprise.admin.util.AdminLoginModule" name="adminSpecialLM">
           <property name="config" value="server-config"></property>
           <property name="auth-realm" value="admin-realm"></property>
         </login-module-config>
       </security-provider>
       <security-provider provider-name="adminFile" name="filerealm" type="LoginModule">
-        <login-module-config module-class="com.sun.enterprise.security.auth.login.FileLoginModule" control-flag="sufficient" name="adminFileLM">
+        <login-module-config control-flag="sufficient" module-class="com.sun.enterprise.security.auth.login.FileLoginModule" name="adminFileLM">
           <property name="config" value="server-config"></property>
           <property name="auth-realm" value="admin-realm"></property>
         </login-module-config>
@@ -23,7 +23,7 @@
   </security-configurations>
   <managed-job-config></managed-job-config>
   <system-applications>
-    <application context-root="" object-type="system-admin" name="__admingui" directory-deployed="true" location="${com.sun.aas.installRootURI}/lib/install/applications/__admingui">
+    <application context-root="" object-type="system-admin" directory-deployed="true" name="__admingui" location="${com.sun.aas.installRootURI}/lib/install/applications/__admingui">
       <module name="__admingui">
         <engine sniffer="web"></engine>
         <engine sniffer="security"></engine>
@@ -51,24 +51,23 @@
     </jdbc-connection-pool>
     <managed-executor-service object-type="system-all" jndi-name="concurrent/__defaultManagedExecutorService"></managed-executor-service>
     <managed-scheduled-executor-service object-type="system-all" jndi-name="concurrent/__defaultManagedScheduledExecutorService"></managed-scheduled-executor-service>
-    <connector-connection-pool resource-adapter-name="jmsra" max-pool-size="250" steady-pool-size="1" name="jms/__defaultConnectionFactory-Connection-Pool" connection-definition-name="javax.jms.ConnectionFactory"></connector-connection-pool>
+    <connector-connection-pool max-pool-size="250" resource-adapter-name="jmsra" steady-pool-size="1" name="jms/__defaultConnectionFactory-Connection-Pool" connection-definition-name="javax.jms.ConnectionFactory"></connector-connection-pool>
     <connector-resource pool-name="jms/__defaultConnectionFactory-Connection-Pool" object-type="system-all-req" jndi-name="jms/__defaultConnectionFactory"></connector-resource>
     <context-service object-type="system-all" jndi-name="concurrent/__defaultContextService"></context-service>
     <managed-thread-factory object-type="system-all" jndi-name="concurrent/__defaultManagedThreadFactory"></managed-thread-factory>
-    <jdbc-connection-pool datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" name="pool_dbVol" res-type="javax.sql.DataSource">
+    <jdbc-connection-pool datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" name="dbVol-Pool" res-type="javax.sql.DataSource">
       <property name="port" value="3306"></property>
       <property name="user" value="user"></property>
+      <property name="password" value="password"></property>
       <property name="ServerName" value="127.0.0.1"></property>
       <property name="DatabaseName" value="dbVol"></property>
-      <property name="password" value="password"></property>
       <property name="useSSL" value="false"></property>
     </jdbc-connection-pool>
-    <jdbc-resource pool-name="pool_dbVol" jndi-name="jdbc/dbVol"></jdbc-resource>
+    <jdbc-resource pool-name="dbVol-Pool" jndi-name="jdbc/dbVol"></jdbc-resource>
   </resources>
   <servers>
     <server config-ref="server-config" name="server">
       <application-ref ref="__admingui" virtual-servers="__asadmin"></application-ref>
-      <application-ref ref="Project-One-1.0-SNAPSHOT" virtual-servers="server"></application-ref>
       <application-ref ref="Project-One" virtual-servers="server"></application-ref>
       <resource-ref ref="jdbc/__TimerPool"></resource-ref>
       <resource-ref ref="jdbc/__default"></resource-ref>
@@ -124,23 +123,26 @@
       <monitoring-service-configuration></monitoring-service-configuration>
       <microprofile-metrics-configuration></microprofile-metrics-configuration>
       <stuck-threads-checker></stuck-threads-checker>
-      <batch-runtime-configuration></batch-runtime-configuration>
       <health-check-service-configuration>
         <log-notifier></log-notifier>
       </health-check-service-configuration>
-      <rest-monitoring-configuration></rest-monitoring-configuration>
+      <batch-runtime-configuration></batch-runtime-configuration>
       <microprofile-openapi-configuration></microprofile-openapi-configuration>
+      <rest-monitoring-configuration></rest-monitoring-configuration>
       <admin-audit-configuration></admin-audit-configuration>
-      <phone-home-runtime-configuration phone-home-id="cbd80260-9fb3-41c6-9a55-a8d06aa075e1"></phone-home-runtime-configuration>
+      <phone-home-runtime-configuration phone-home-id="1f2b93d3-5104-4f93-86a8-df6bcd5b095c"></phone-home-runtime-configuration>
       <metrics-health-check-configuration></metrics-health-check-configuration>
-      <microprofile-fault-tolerance-configuration></microprofile-fault-tolerance-configuration>
       <amx-configuration></amx-configuration>
+      <microprofile-fault-tolerance-configuration></microprofile-fault-tolerance-configuration>
       <zendesk-support-configuration></zendesk-support-configuration>
       <microprofile-config></microprofile-config>
       <jms-service default-jms-host="default_JMS_host" type="EMBEDDED">
-        <jms-host port="${JMS_PROVIDER_PORT}" name="default_JMS_host" host="localhost"></jms-host>
+        <jms-host port="${JMS_PROVIDER_PORT}" host="localhost" name="default_JMS_host"></jms-host>
       </jms-service>
       <cdi-service></cdi-service>
+      <ejb-container>
+        <ejb-timer-service></ejb-timer-service>
+      </ejb-container>
       <web-container>
         <session-config>
           <session-manager>
@@ -150,9 +152,6 @@
           <session-properties></session-properties>
         </session-config>
       </web-container>
-      <ejb-container>
-        <ejb-timer-service></ejb-timer-service>
-      </ejb-container>
       <rest-config></rest-config>
       <environment-warning-configuration></environment-warning-configuration>
       <diagnostic-service></diagnostic-service>
@@ -217,10 +216,16 @@
         </message-security-config>
         <property name="default-digest-algorithm" value="SHA-256"></property>
       </security-service>
-      <java-config classpath-suffix="" debug-options="-agentlib:jdwp=transport=dt_socket,address=9009,server=n,suspend=y" java-home="/home/panticne/Téléchargements/jdk1.8.0_201" system-classpath="">
+      <java-config classpath-suffix="" debug-options="-agentlib:jdwp=transport=dt_socket,address=9009,server=n,suspend=y" java-home="/usr/lib/jvm/java-8-openjdk" system-classpath="">
         <jvm-options>-client</jvm-options>
-        <jvm-options>[9|]--add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED</jvm-options>
+        <jvm-options>[9|]--add-opens=java.base/jdk.internal.loader=ALL-UNNAMED</jvm-options>
+        <jvm-options>[9|]--add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED</jvm-options>
         <jvm-options>[9|]--add-exports=java.base/jdk.internal.ref=ALL-UNNAMED</jvm-options>
+        <jvm-options>[9|]--add-opens=java.base/java.lang=ALL-UNNAMED</jvm-options>
+        <jvm-options>[9|]--add-opens=java.base/java.nio=ALL-UNNAMED</jvm-options>
+        <jvm-options>[9|]--add-opens=java.base/sun.nio.ch=ALL-UNNAMED</jvm-options>
+        <jvm-options>[9|]--add-opens=java.management/sun.management=ALL-UNNAMED</jvm-options>
+        <jvm-options>[9|]--add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED</jvm-options>
         <jvm-options>-Djava.awt.headless=true</jvm-options>
         <jvm-options>-Djdk.corba.allowOutputStreamSubclass=true</jvm-options>
         <jvm-options>-Djavax.xml.accessExternalSchema=all</jvm-options>
@@ -259,7 +264,6 @@
         <jvm-options>[9|]-Xbootclasspath/a:${com.sun.aas.installRoot}/lib/grizzly-npn-api.jar</jvm-options>
         <jvm-options>[|8]-Djava.endorsed.dirs=${com.sun.aas.installRoot}/modules/endorsed${path.separator}${com.sun.aas.installRoot}/lib/endorsed</jvm-options>
         <jvm-options>[|8]-Djava.ext.dirs=${com.sun.aas.javaRoot}/lib/ext${path.separator}${com.sun.aas.javaRoot}/jre/lib/ext${path.separator}${com.sun.aas.instanceRoot}/lib/ext</jvm-options>
-        <jvm-options>-javaagent:/app/extra/idea-IU/plugins/java/lib/rt/debugger-agent.jar</jvm-options>
       </java-config>
       <availability-service>
         <web-container-availability></web-container-availability>
@@ -295,7 +299,7 @@
         </transports>
       </network-config>
       <thread-pools>
-        <thread-pool name="admin-thread-pool" min-thread-pool-size="1" max-queue-size="256" max-thread-pool-size="15"></thread-pool>
+        <thread-pool name="admin-thread-pool" min-thread-pool-size="1" max-thread-pool-size="15" max-queue-size="256"></thread-pool>
         <thread-pool name="http-thread-pool"></thread-pool>
         <thread-pool name="thread-pool-1" max-thread-pool-size="200"></thread-pool>
       </thread-pools>
@@ -345,7 +349,7 @@
       </ejb-container>
       <mdb-container></mdb-container>
       <jms-service addresslist-behavior="priority" default-jms-host="default_JMS_host" type="EMBEDDED">
-        <jms-host port="${JMS_PROVIDER_PORT}" host="localhost" name="default_JMS_host"></jms-host>
+        <jms-host port="${JMS_PROVIDER_PORT}" name="default_JMS_host" host="localhost"></jms-host>
       </jms-service>
       <log-service file="${com.sun.aas.instanceRoot}/logs/server.log" log-rotation-limit-in-bytes="2000000">
         <module-log-levels></module-log-levels>
@@ -511,7 +515,7 @@
       <thread-pools>
         <thread-pool name="http-thread-pool"></thread-pool>
         <thread-pool name="thread-pool-1" min-thread-pool-size="2" max-thread-pool-size="200"></thread-pool>
-        <thread-pool name="admin-thread-pool" min-thread-pool-size="1" max-queue-size="256" max-thread-pool-size="15"></thread-pool>
+        <thread-pool name="admin-thread-pool" min-thread-pool-size="1" max-thread-pool-size="15" max-queue-size="256"></thread-pool>
       </thread-pools>
       <group-management-service>
         <failure-detection></failure-detection>
@@ -532,31 +536,18 @@
     </config>
   </configs>
   <property name="administrative.domain.name" value="domain1"></property>
-  <secure-admin special-admin-indicator="f5d84a57-092e-4ee0-a19a-dd5d6d633ac5">
+  <secure-admin special-admin-indicator="975de3f5-ac7a-416d-aa98-a15ca2885c95">
     <secure-admin-principal dn="CN=localhost,OU=Payara,O=Payara Foundation,L=Great Malvern,ST=Worcestershire,C=UK"></secure-admin-principal>
     <secure-admin-principal dn="CN=localhost-instance,OU=Payara,O=Payara Foundation,L=Great Malvern,ST=Worcestershire,C=UK"></secure-admin-principal>
   </secure-admin>
   <deployment-groups></deployment-groups>
   <clusters></clusters>
   <applications>
-    <application deployment-time="8396" context-root="/Project-One-1.0-SNAPSHOT" object-type="user" name="Project-One-1.0-SNAPSHOT" directory-deployed="true" location="file:/home/panticne/Documents/AMT/Teaching-HEIGVD-AMT-2019-Project-One/src/target/Project-One-1.0-SNAPSHOT/" time-deployed="1572008812246">
+    <application deployment-time="2042" context-root="/Project-One" object-type="user" name="Project-One" directory-deployed="true" location="file:/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/src/target/Project-One/" time-deployed="1572988189890">
       <property name="archiveType" value="war"></property>
       <property name="cdiDevModeEnabled" value="false"></property>
-      <property name="appLocation" value="file:/home/panticne/Documents/AMT/Teaching-HEIGVD-AMT-2019-Project-One/src/target/Project-One-1.0-SNAPSHOT/"></property>
-      <property name="org.glassfish.ejb.container.application_unique_id" value="103023169026195456"></property>
-      <property name="defaultAppName" value="Project-One-1.0-SNAPSHOT"></property>
-      <module name="Project-One-1.0-SNAPSHOT">
-        <engine sniffer="cdi"></engine>
-        <engine sniffer="ejb"></engine>
-        <engine sniffer="security"></engine>
-        <engine sniffer="web"></engine>
-      </module>
-    </application>
-    <application deployment-time="1905" context-root="/Project-One" object-type="user" name="Project-One" directory-deployed="true" location="file:/home/panticne/Documents/AMT/Teaching-HEIGVD-AMT-2019-Project-One/src/target/Project-One/" time-deployed="1572452938854">
-      <property name="archiveType" value="war"></property>
-      <property name="cdiDevModeEnabled" value="false"></property>
-      <property name="appLocation" value="file:/home/panticne/Documents/AMT/Teaching-HEIGVD-AMT-2019-Project-One/src/target/Project-One/"></property>
-      <property name="org.glassfish.ejb.container.application_unique_id" value="103052124319580160"></property>
+      <property name="appLocation" value="file:/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/src/target/Project-One/"></property>
+      <property name="org.glassfish.ejb.container.application_unique_id" value="103087353397379072"></property>
       <property name="defaultAppName" value="Project-One"></property>
       <module name="Project-One">
         <engine sniffer="cdi"></engine>

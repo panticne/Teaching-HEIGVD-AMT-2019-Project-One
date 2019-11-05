@@ -9,5 +9,5 @@ import java.util.List;
 @Local
 public interface AvionDAOLocal {
     public List<Avion> getAllPlane();
-
+    public Avion getAvionById(int id);
 }
