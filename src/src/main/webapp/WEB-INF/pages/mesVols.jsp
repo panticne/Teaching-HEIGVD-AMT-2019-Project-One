@@ -41,7 +41,7 @@
         </tbody>
     </table>
     <div class="text-center">
-        <a href="/Project-One/pages/ajouterVols"  class="btn btn-primary center">Ajouter un nouveau vol</a>
+        <a href="/Project-One/pages/ajouterVol"  class="btn btn-primary center">Ajouter un nouveau vol</a>
     </div>
     <%@include file="includes/footer.jsp"%>
 </div>

@@ -129,4 +129,20 @@ public class VolDAO implements VolDAOLocal{
 
         return false;
     }
+
+    public void ajouterVol(int piloteId, int avionId, int trajetId){
+        String query = "INSERT INTO vol VALUES(NULL, ?, ?, ?)";
+
+        try {
+            Connection connection = dataSource.getConnection();
+            PreparedStatement pstmtUpdate = connection.prepareStatement(query);
+            pstmtUpdate.setInt(1, piloteId);
+            pstmtUpdate.setInt(2, avionId);
+            pstmtUpdate.setInt(3, trajetId);
+            pstmtUpdate.executeUpdate();
+            connection.close();
+        }catch(Exception e){
+
+        }
+    }
 }

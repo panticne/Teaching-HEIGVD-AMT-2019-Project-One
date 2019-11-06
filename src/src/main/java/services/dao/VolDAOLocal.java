@@ -12,4 +12,5 @@ public interface VolDAOLocal {
     boolean deleteVolById(int volId);
     Vol getVolById(int volId);
     boolean changerVol(int volId, int avionId, int trajetId);
+    void ajouterVol(int piloteId, int avionId, int trajetId);
 }
