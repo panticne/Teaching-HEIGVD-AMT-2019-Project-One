@@ -17,7 +17,7 @@
         <div class="row justify-content-md-center">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <form action="/Project-One/pages/register" method="post">
+                <form action="/Project-One/register" method="post">
                     <input class="form-control input-lg" placeholder="Prénom" type="text" name="prenom" required />
                     <input class="form-control input-lg" placeholder="Nom" type="text" name="nom" required />
                     <input class="form-control input-lg" placeholder="Pseudo" type="text" name="pseudo" required/>

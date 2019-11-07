@@ -7,10 +7,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<%@include file="includes/header.jsp"%>
+<%@include file="../includes/header.jsp"%>
 <body>
 <div class="container">
-    <%@include file="includes/nav.jsp"%>
+    <%@include file="../includes/nav.jsp"%>
     <table class="table table-dark">
         <thead>
         <tr>
@@ -43,7 +43,7 @@
     <div class="text-center">
         <a href="/Project-One/pages/ajouterVol"  class="btn btn-primary center">Ajouter un nouveau vol</a>
     </div>
-    <%@include file="includes/footer.jsp"%>
+    <%@include file="../includes/footer.jsp"%>
 </div>
 </body>
 </html>

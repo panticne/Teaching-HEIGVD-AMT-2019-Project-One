@@ -26,13 +26,13 @@ public class MesVolsServlet extends HttpServlet {
         List<Vol> vols = volDAO.getVolByPiloteId(pilotId);
         request.setAttribute("vols", vols);
         request.setAttribute("title", "Mes vols");
-        request.getRequestDispatcher("/WEB-INF/pages/mesVols.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/pages/restreint/mesVols.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String volId = req.getParameter("id");
         volDAO.deleteVolById(Integer.parseInt(volId));
-        req.getRequestDispatcher("/WEB-INF/pages/mesVols.jsp").forward(req, resp);
+        resp.sendRedirect("/Project-One/pages/mesVols");
     }
 }

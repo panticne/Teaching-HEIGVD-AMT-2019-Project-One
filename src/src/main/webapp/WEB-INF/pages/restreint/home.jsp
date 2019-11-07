@@ -7,10 +7,10 @@
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
-<%@include file="includes/header.jsp"%>
+<%@include file="../includes/header.jsp"%>
 <body>
 <div class="container">
-    <%@include file="includes/nav.jsp"%>
+    <%@include file="../includes/nav.jsp"%>
     <table class="table table-dark">
         <thead>
         <tr>
@@ -37,7 +37,7 @@
             </c:forEach>
         </tbody>
     </table>
-    <%@include file="includes/footer.jsp"%>
+    <%@include file="../includes/footer.jsp"%>
 </div>
 </body>
 </html>

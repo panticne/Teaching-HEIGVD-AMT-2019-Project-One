@@ -17309,3 +17309,1856 @@ Instances: {
 [2019-11-05T22:09:50.023+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1572988190023] [levelValue: 800] [[
   Project-One was successfully deployed in 2,042 milliseconds.]]
 
+[2019-11-05T22:15:42.146+0100] [Payara 5.193] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1572988542146] [levelValue: 800] [[
+  Listening to REST requests at context: /command/domain.]]
+
+[2019-11-05T22:15:42.229+0100] [Payara 5.193] [INFO] [NCLS-CORE-00092] [javax.enterprise.system.core] [tid: _ThreadID=195 _ThreadName=Thread-31] [timeMillis: 1572988542229] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2019-11-05T22:15:42.236+0100] [Payara 5.193] [INFO] [] [] [tid: _ThreadID=195 _ThreadName=Thread-31] [timeMillis: 1572988542236] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2019-11-05T22:15:42.242+0100] [Payara 5.193] [INFO] [NCLS-JMX-00002] [javax.enterprise.system.jmx] [tid: _ThreadID=195 _ThreadName=Thread-31] [timeMillis: 1572988542242] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2019-11-05T22:15:42.243+0100] [Payara 5.193] [INFO] [NCLS-JMX-00001] [javax.enterprise.system.jmx] [tid: _ThreadID=195 _ThreadName=Thread-31] [timeMillis: 1572988542243] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2019-11-05T22:15:42.396+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=201 _ThreadName=RunLevelControllerThread-1572988542301] [timeMillis: 1572988542396] [levelValue: 800] [[
+  Hazelcast Instance Unbound from JNDI at payara/Hazelcast]]
+
+[2019-11-05T22:15:42.396+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=201 _ThreadName=RunLevelControllerThread-1572988542301] [timeMillis: 1572988542396] [levelValue: 800] [[
+  JSR107 Caching Provider Unbound from JNDI at payara/CachingProvider]]
+
+[2019-11-05T22:15:42.397+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=201 _ThreadName=RunLevelControllerThread-1572988542301] [timeMillis: 1572988542397] [levelValue: 800] [[
+  JSR107 Cache Manager Unbound from JNDI at payara/CacheManager]]
+
+[2019-11-05T22:15:42.424+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=201 _ThreadName=RunLevelControllerThread-1572988542301] [timeMillis: 1572988542424] [levelValue: 800] [[
+  Shutdown Hazelcast]]
+
+[2019-11-05T22:15:42.445+0100] [Payara 5.193] [INFO] [] [] [tid: _ThreadID=209 _ThreadName=RunLevelControllerThread-1572988542437] [timeMillis: 1572988542445] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource]]]
+
+[2019-11-05T22:15:42.470+0100] [Payara 5.193] [INFO] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.service] [tid: _ThreadID=210 _ThreadName=Thread-40] [timeMillis: 1572988542470] [levelValue: 800] [[
+  RAR7094: __ds_jdbc_ra shutdown successful.]]
+
+[2019-11-06T14:28:10.961+0100] [] [INFO] [NCLS-GFLAUNCHER-00005] [javax.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1573046890961] [levelValue: 800] [[
+  JVM invocation command line:
+/usr/lib/jvm/java-8-openjdk/bin/java
+-cp
+/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/modules/glassfish.jar
+-agentlib:jdwp=transport=dt_socket,address=9009,server=n,suspend=y
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-Xbootclasspath/p:/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/lib/grizzly-npn-bootstrap-1.8.1.jar
+-Xmx512m
+-client
+-javaagent:/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/lib/monitor/flashlight-agent.jar
+-Djavax.xml.accessExternalSchema=all
+-Djavax.net.ssl.trustStore=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains/domain1/config/cacerts.jks
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Dfelix.fileinstall.dir=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/modules/autostart/
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dcom.sun.aas.installRoot=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish
+-Dfelix.fileinstall.poll=5000
+-Djava.security.policy=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains/domain1/config/server.policy
+-Djava.endorsed.dirs=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/modules/endorsed:/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/lib/endorsed
+-Dosgi.shell.telnet.maxconn=1
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dfelix.fileinstall.log.level=2
+-Djavax.net.ssl.keyStore=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains/domain1/config/keystore.jks
+-Djava.security.auth.login.config=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains/domain1/config/login.conf
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.grizzly.DEFAULT_MEMORY_MANAGER=org.glassfish.grizzly.memory.HeapMemoryManager
+-Dfelix.fileinstall.bundles.new.start=true
+-Dcom.sun.aas.instanceRoot=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains/domain1
+-Dosgi.shell.telnet.port=6666
+-Dgosh.args=--nointeractive
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Dorg.jboss.weld.serialization.beanIdentifierIndexOptimization=false
+-Dosgi.shell.telnet.ip=127.0.0.1
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Djava.awt.headless=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djava.ext.dirs=/usr/lib/jvm/java-8-openjdk/lib/ext:/usr/lib/jvm/java-8-openjdk/jre/lib/ext:/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains/domain1/lib/ext
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-Dorg.glassfish.grizzly.nio.DefaultSelectorHandler.force-selector-spin-detection=true
+-Djava.library.path=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--extraterse=false,,,--echo=false,,,--interactive=false,,,--autoname=false,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=true,,,--domaindir,,,/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/lib/client/appserver-cli.jar
+-debug
+true
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain
+-watchdog
+false]]
+
+[2019-11-06T14:28:14.672+0100] [Payara 5.193] [INFO] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046894672] [levelValue: 800] [[
+  Running Payara Version: Payara Server  5.193.1 #badassfish (build 275)]]
+
+[2019-11-06T14:28:14.679+0100] [Payara 5.193] [INFO] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046894679] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2019-11-06T14:28:15.165+0100] [Payara 5.193] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046895165] [levelValue: 800] [[
+  Registered fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactoryProxy for persistence-type = hazelcast in BackingStoreFactoryRegistry]]
+
+[2019-11-06T14:28:15.333+0100] [Payara 5.193] [INFO] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1573046894531] [timeMillis: 1573046895333] [levelValue: 800] [[
+  Network Listener http-listener-1 started in: 8ms - bound to [/0.0.0.0:8080]]]
+
+[2019-11-06T14:28:15.384+0100] [Payara 5.193] [INFO] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1573046894531] [timeMillis: 1573046895384] [levelValue: 800] [[
+  Network Listener http-listener-2 started in: 5ms - bound to [/0.0.0.0:8181]]]
+
+[2019-11-06T14:28:15.427+0100] [Payara 5.193] [INFO] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1573046894531] [timeMillis: 1573046895427] [levelValue: 800] [[
+  Network Listener admin-listener started in: 1ms - bound to [/0.0.0.0:4848]]]
+
+[2019-11-06T14:28:15.430+0100] [Payara 5.193] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1573046894531] [timeMillis: 1573046895430] [levelValue: 800] [[
+  Grizzly 2.4.3 started in: 435ms - bound to [http-listener-1:8080, http-listener-2:8181, admin-listener:4848]]]
+
+[2019-11-06T14:28:15.761+0100] [Payara 5.193] [INFO] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1573046894531] [timeMillis: 1573046895761] [levelValue: 800] [[
+  Network Listener iiop-service started in: 221ms - bound to [/0.0.0.0:3700]]]
+
+[2019-11-06T14:28:15.805+0100] [Payara 5.193] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573046894542] [timeMillis: 1573046895805] [levelValue: 800] [[
+  HV000001: Hibernate Validator 6.0.16.Final]]
+
+[2019-11-06T14:28:16.527+0100] [Payara 5.193] [INFO] [] [javax.enterprise.resource.corba.org.glassfish.enterprise.iiop.api] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046896527] [levelValue: 800] [[
+  GlassFishORBFactory service initialized.]]
+
+[2019-11-06T14:28:16.855+0100] [Payara 5.193] [INFO] [NCLS-SECURITY-01002] [javax.enterprise.system.core.security] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046896855] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2019-11-06T14:28:16.856+0100] [Payara 5.193] [INFO] [NCLS-SECURITY-01010] [javax.enterprise.system.core.security] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046896856] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2019-11-06T14:28:16.863+0100] [Payara 5.193] [INFO] [NCLS-SECURITY-01143] [javax.enterprise.system.core.security] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046896863] [levelValue: 800] [[
+  Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2019-11-06T14:28:16.951+0100] [Payara 5.193] [INFO] [NCLS-SECURITY-01011] [javax.enterprise.system.core.security] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046896951] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2019-11-06T14:28:17.268+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046897268] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2019-11-06T14:28:17.280+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046897280] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2019-11-06T14:28:17.282+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046897282] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2019-11-06T14:28:17.309+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046897309] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2019-11-06T14:28:17.312+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046897312] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2019-11-06T14:28:17.550+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046897550] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2019-11-06T14:28:19.521+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=31 _ThreadName=RunLevelControllerThread-1573046894542] [timeMillis: 1573046899521] [levelValue: 800] [[
+  Hazelcast Instance Bound to JNDI at payara/Hazelcast]]
+
+[2019-11-06T14:28:19.521+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=31 _ThreadName=RunLevelControllerThread-1573046894542] [timeMillis: 1573046899521] [levelValue: 800] [[
+  JSR107 Caching Provider Bound to JNDI at payara/CachingProvider]]
+
+[2019-11-06T14:28:19.522+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=31 _ThreadName=RunLevelControllerThread-1573046894542] [timeMillis: 1573046899522] [levelValue: 800] [[
+  JSR107 Default Cache Manager Bound to JNDI at payara/CacheManager]]
+
+[2019-11-06T14:28:20.275+0100] [Payara 5.193] [INFO] [] [org.jboss.weld.Version] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046900275] [levelValue: 800] [[
+  WELD-000900: 3.1.1 (Final)]]
+
+[2019-11-06T14:28:20.438+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046900438] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T14:28:20.479+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046900479] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T14:28:20.487+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046900487] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T14:28:20.495+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046900495] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T14:28:22.481+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046902481] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T14:28:22.491+0100] [Payara 5.193] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046902491] [levelValue: 800] [[
+  Loading application Project-One done in 7,165 ms]]
+
+[2019-11-06T14:28:22.621+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046902621] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T14:28:22.670+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046902670] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T14:28:23.612+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573046894532] [timeMillis: 1573046903612] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T14:28:23.674+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.cluster.PayaraCluster] [tid: _ThreadID=133 _ThreadName=Executor-Service-5] [timeMillis: 1573046903674] [levelValue: 800] [[
+  Data Grid Status 
+Payara Data Grid State: DG Version: 35 DG Name: development DG Size: 1
+Instances: {
+ DataGrid: development Instance Group: MicroShoal Name: server Lite: false This: true UUID: 754537c0-67c1-498c-a8df-6d166c704abc Address: /10.192.104.118:4900
+}]]
+
+[2019-11-06T14:28:23.680+0100] [Payara 5.193] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1573046903680] [levelValue: 800] [[
+  Payara Server  5.193.1 #badassfish (275) startup time : Felix (2,788ms), startup services(9,154ms), total(11,942ms)]]
+
+[2019-11-06T14:28:23.687+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.notification.NotificationService] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1573046903687] [levelValue: 800] [[
+  Payara Notification Service bootstrapped with configuration: NotificationExecutionOptions{enabled=true, notifierConfigurationExecutionOptionsList={LOG=LogNotifierConfigurationExecutionOptions{useSeparateLogFile=false} NotifierConfigurationExecutionOptions{notifierType=LOG, enabled=true, noisy=true}}}]]
+
+[2019-11-06T14:28:23.901+0100] [Payara 5.193] [INFO] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573046894542] [timeMillis: 1573046903901] [levelValue: 800] [[
+  Network Listener JMS_PROXY_default_JMS_host started in: 1ms - bound to [/0.0.0.0:7676]]]
+
+[2019-11-06T14:28:24.329+0100] [Payara 5.193] [INFO] [NCLS-JMX-00005] [javax.enterprise.system.jmx] [tid: _ThreadID=138 _ThreadName=Thread-11] [timeMillis: 1573046904329] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://0.0.0.0:8686/jndi/rmi://0.0.0.0:8686/jmxrmi]]
+
+[2019-11-06T14:28:24.378+0100] [Payara 5.193] [INFO] [] [org.jvnet.hk2.osgiadapter] [tid: _ThreadID=23 _ThreadName=FelixStartLevel] [timeMillis: 1573046904378] [levelValue: 800] [[
+  Skipping registration of inhabitant for service reference [org.osgi.service.metatype.MetaTypeProvider] as the service object could not be obtained.]]
+
+[2019-11-06T14:28:25.665+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573046905665] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T14:28:25.673+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573046905673] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T14:28:25.682+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573046905682] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T14:28:25.689+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573046905689] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T14:28:26.072+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573046906072] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T14:28:26.121+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573046906121] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T14:28:26.129+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573046906129] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T14:28:26.266+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573046906266] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T14:28:26.528+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573046906528] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,843 milliseconds.]]
+
+[2019-11-06T15:13:33.635+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor] [tid: _ThreadID=95 _ThreadName=hz._hzInstance_1_development.InvocationMonitorThread] [timeMillis: 1573049613635] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] MonitorInvocationsTask delayed 2374243 ms]]
+
+[2019-11-06T15:13:33.650+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor] [tid: _ThreadID=95 _ThreadName=hz._hzInstance_1_development.InvocationMonitorThread] [timeMillis: 1573049613650] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] BroadcastOperationControlTask delayed 2370258 ms]]
+
+[2019-11-06T15:13:33.652+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.internal.cluster.impl.ClusterHeartbeatManager] [tid: _ThreadID=199 _ThreadName=hz._hzInstance_1_development.cached.thread-13] [timeMillis: 1573049613652] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 2370271 ms, Heartbeat-Timeout: 60000 ms]]
+
+[2019-11-06T15:18:07.516+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573049887516] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T15:18:07.533+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573049887533] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T15:18:07.548+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573049887548] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T15:18:07.559+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573049887559] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T15:18:08.185+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573049888185] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T15:18:08.255+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573049888255] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T15:18:08.265+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573049888265] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T15:18:08.542+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573049888542] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T15:18:08.648+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573049888648] [levelValue: 800] [[
+  Project-One was successfully deployed in 2,024 milliseconds.]]
+
+[2019-11-06T15:21:54.361+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050114361] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T15:21:54.372+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050114372] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T15:21:54.384+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050114384] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T15:21:54.393+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050114393] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T15:21:54.887+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050114887] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T15:21:54.956+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050114956] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T15:21:54.969+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050114969] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T15:21:55.305+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050115305] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T15:21:55.402+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050115402] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,943 milliseconds.]]
+
+[2019-11-06T15:28:33.131+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050513131] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T15:28:33.142+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050513142] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T15:28:33.153+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050513153] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T15:28:33.163+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050513163] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T15:28:33.588+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050513588] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T15:28:33.646+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050513646] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T15:28:33.655+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050513655] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T15:28:33.826+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050513826] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T15:28:33.942+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573050513942] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,522 milliseconds.]]
+
+[2019-11-06T16:06:36.653+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052796653] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T16:06:36.668+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052796668] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T16:06:36.680+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052796680] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T16:06:36.689+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052796689] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T16:06:37.157+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052797157] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T16:06:37.217+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052797217] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T16:06:37.227+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052797227] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T16:06:37.391+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052797391] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T16:06:37.475+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052797475] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,752 milliseconds.]]
+
+[2019-11-06T16:06:59.142+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=40 _ThreadName=http-thread-pool::http-listener-1(5)] [timeMillis: 1573052819142] [levelValue: 900] [[
+  StandardWrapperValve[ModifierVol]: Servlet.service() for servlet ModifierVol threw exception
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at web.controllers.ModifierVolServlet.doPost(ModifierVolServlet.java:55)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-11-06T16:07:12.176+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=37 _ThreadName=http-thread-pool::http-listener-1(2)] [timeMillis: 1573052832176] [levelValue: 900] [[
+  StandardWrapperValve[ModifierVol]: Servlet.service() for servlet ModifierVol threw exception
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at web.controllers.ModifierVolServlet.doPost(ModifierVolServlet.java:55)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-11-06T16:07:17.700+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=38 _ThreadName=http-thread-pool::http-listener-1(3)] [timeMillis: 1573052837700] [levelValue: 900] [[
+  StandardWrapperValve[ModifierVol]: Servlet.service() for servlet ModifierVol threw exception
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at web.controllers.ModifierVolServlet.doPost(ModifierVolServlet.java:55)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-11-06T16:07:30.573+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=36 _ThreadName=http-thread-pool::http-listener-1(1)] [timeMillis: 1573052850573] [levelValue: 900] [[
+  StandardWrapperValve[ModifierVol]: Servlet.service() for servlet ModifierVol threw exception
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at web.controllers.ModifierVolServlet.doPost(ModifierVolServlet.java:55)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-11-06T16:07:58.219+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=38 _ThreadName=http-thread-pool::http-listener-1(3)] [timeMillis: 1573052878219] [levelValue: 900] [[
+  StandardWrapperValve[ModifierVol]: Servlet.service() for servlet ModifierVol threw exception
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at web.controllers.ModifierVolServlet.doPost(ModifierVolServlet.java:55)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-11-06T16:08:12.165+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052892165] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T16:08:12.173+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052892173] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T16:08:12.179+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052892179] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T16:08:12.185+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052892185] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T16:08:12.533+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052892533] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T16:08:12.582+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052892582] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T16:08:12.590+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052892590] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T16:08:12.771+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052892771] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T16:08:12.860+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573052892860] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,466 milliseconds.]]
+
+[2019-11-06T16:11:39.341+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor] [tid: _ThreadID=95 _ThreadName=hz._hzInstance_1_development.InvocationMonitorThread] [timeMillis: 1573053099341] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] MonitorInvocationsTask delayed 106343 ms]]
+
+[2019-11-06T16:11:39.344+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor] [tid: _ThreadID=95 _ThreadName=hz._hzInstance_1_development.InvocationMonitorThread] [timeMillis: 1573053099344] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] BroadcastOperationControlTask delayed 96874 ms]]
+
+[2019-11-06T16:11:39.367+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.internal.cluster.impl.ClusterHeartbeatManager] [tid: _ThreadID=368 _ThreadName=hz._hzInstance_1_development.cached.thread-18] [timeMillis: 1573053099367] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 106873 ms, Heartbeat-Timeout: 60000 ms]]
+
+[2019-11-06T16:32:23.630+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor] [tid: _ThreadID=95 _ThreadName=hz._hzInstance_1_development.InvocationMonitorThread] [timeMillis: 1573054343630] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] MonitorInvocationsTask delayed 19264 ms]]
+
+[2019-11-06T16:32:31.207+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor] [tid: _ThreadID=95 _ThreadName=hz._hzInstance_1_development.InvocationMonitorThread] [timeMillis: 1573054351207] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] BroadcastOperationControlTask delayed 13841 ms]]
+
+[2019-11-06T16:39:43.632+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor] [tid: _ThreadID=95 _ThreadName=hz._hzInstance_1_development.InvocationMonitorThread] [timeMillis: 1573054783632] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] MonitorInvocationsTask delayed 415426 ms]]
+
+[2019-11-06T16:39:43.635+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.internal.cluster.impl.ClusterHeartbeatManager] [tid: _ThreadID=409 _ThreadName=hz._hzInstance_1_development.cached.thread-5] [timeMillis: 1573054783635] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 412439 ms, Heartbeat-Timeout: 60000 ms]]
+
+[2019-11-06T16:39:51.127+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor] [tid: _ThreadID=95 _ThreadName=hz._hzInstance_1_development.InvocationMonitorThread] [timeMillis: 1573054791127] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] BroadcastOperationControlTask delayed 409920 ms]]
+
+[2019-11-06T16:42:56.278+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573054976278] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T16:42:56.288+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573054976288] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T16:42:56.296+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573054976296] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T16:42:56.303+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573054976303] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T16:42:56.681+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573054976681] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T16:42:56.744+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573054976744] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T16:42:56.753+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573054976753] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T16:42:56.913+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573054976913] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T16:42:56.975+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573054976975] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,556 milliseconds.]]
+
+[2019-11-06T16:47:10.060+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055230060] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T16:47:10.074+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055230074] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T16:47:10.086+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055230086] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T16:47:10.096+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055230096] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T16:47:10.453+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055230453] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T16:47:10.495+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055230495] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T16:47:10.504+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055230504] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T16:47:10.629+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055230629] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T16:47:10.679+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055230679] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,365 milliseconds.]]
+
+[2019-11-06T16:51:00.614+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055460614] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T16:51:00.629+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055460629] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T16:51:00.640+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055460640] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T16:51:00.653+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055460653] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T16:51:01.127+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055461127] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T16:51:01.175+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055461175] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T16:51:01.182+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055461182] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T16:51:01.343+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055461343] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T16:51:01.413+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055461413] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,631 milliseconds.]]
+
+[2019-11-06T16:55:13.669+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055713669] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T16:55:13.683+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055713683] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T16:55:13.695+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055713695] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T16:55:13.705+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055713705] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T16:55:14.082+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055714082] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T16:55:14.152+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055714152] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T16:55:14.164+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055714164] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T16:55:14.437+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055714437] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T16:55:14.564+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573055714564] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,734 milliseconds.]]
+
+[2019-11-06T17:02:50.504+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573056170504] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T17:02:50.518+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573056170518] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T17:02:50.531+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573056170531] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T17:02:50.540+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573056170540] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T17:02:51.064+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573056171064] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T17:02:51.125+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573056171125] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T17:02:51.135+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573056171135] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T17:02:51.411+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573056171411] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T17:02:51.568+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573056171568] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,977 milliseconds.]]
+
+[2019-11-06T17:19:42.356+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057182356] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T17:19:42.366+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057182366] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T17:19:42.373+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057182373] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T17:19:42.380+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057182380] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T17:19:42.791+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057182791] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T17:19:42.847+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057182847] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T17:19:42.855+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057182855] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T17:19:43.042+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057183042] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T17:19:43.144+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057183144] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,559 milliseconds.]]
+
+[2019-11-06T17:20:46.700+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057246700] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T17:20:46.710+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057246710] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T17:20:46.718+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057246718] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T17:20:46.724+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057246724] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T17:20:47.067+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057247067] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T17:20:47.102+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057247102] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T17:20:47.108+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057247108] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T17:20:47.241+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057247241] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T17:20:47.292+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057247292] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,316 milliseconds.]]
+
+[2019-11-06T17:21:46.185+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057306185] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T17:21:46.194+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057306194] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T17:21:46.202+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057306202] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T17:21:46.208+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057306208] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T17:21:46.531+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057306531] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T17:21:46.584+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057306584] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T17:21:46.592+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057306592] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T17:21:46.722+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057306722] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T17:21:46.785+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057306785] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,430 milliseconds.]]
+
+[2019-11-06T17:23:13.250+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057393250] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T17:23:13.264+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057393264] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T17:23:13.274+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057393274] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T17:23:13.281+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057393281] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T17:23:13.655+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057393655] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T17:23:13.695+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057393695] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T17:23:13.701+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057393701] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T17:23:13.844+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057393844] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T17:23:13.930+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057393930] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,717 milliseconds.]]
+
+[2019-11-06T17:23:46.394+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057426394] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T17:23:46.403+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057426403] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T17:23:46.410+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057426410] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T17:23:46.418+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057426418] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T17:23:46.741+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057426741] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T17:23:46.783+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057426783] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T17:23:46.788+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057426788] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T17:23:46.942+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057426942] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T17:23:47.023+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057427023] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,527 milliseconds.]]
+
+[2019-11-06T17:27:49.400+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057669400] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T17:27:49.409+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057669409] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T17:27:49.419+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057669419] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T17:27:49.428+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057669428] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T17:27:49.757+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057669757] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T17:27:49.799+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057669799] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T17:27:49.805+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057669805] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T17:27:49.936+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057669936] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T17:27:50.007+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057670007] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,394 milliseconds.]]
+
+[2019-11-06T17:29:08.880+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors] [tid: _ThreadID=37 _ThreadName=http-thread-pool::http-listener-1(2)] [timeMillis: 1573057748880] [levelValue: 900] [[
+  RAR5117 : Failed to obtain/create connection from connection pool [ dbVol-Pool ]. Reason : com.sun.appserv.connectors.internal.api.PoolingException: In-use connections equal max-pool-size and expired max-wait-time. Cannot allocate more connections.]]
+
+[2019-11-06T17:29:08.885+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.resource.resourceadapter.com.sun.gjc.spi] [tid: _ThreadID=37 _ThreadName=http-thread-pool::http-listener-1(2)] [timeMillis: 1573057748885] [levelValue: 900] [[
+  RAR5114 : Error allocating connection : [Error in allocating a connection. Cause: In-use connections equal max-pool-size and expired max-wait-time. Cannot allocate more connections.]]]
+
+[2019-11-06T17:29:35.247+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057775247] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T17:29:35.253+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057775253] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T17:29:35.260+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057775260] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T17:29:35.267+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057775267] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T17:29:35.495+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057775495] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T17:29:35.527+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057775527] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T17:29:35.533+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057775533] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T17:29:35.626+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057775626] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T17:29:35.662+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057775662] [levelValue: 800] [[
+  Project-One was successfully deployed in 3,216 milliseconds.]]
+
+[2019-11-06T17:30:08.929+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors] [tid: _ThreadID=40 _ThreadName=http-thread-pool::http-listener-1(5)] [timeMillis: 1573057808929] [levelValue: 900] [[
+  RAR5117 : Failed to obtain/create connection from connection pool [ dbVol-Pool ]. Reason : com.sun.appserv.connectors.internal.api.PoolingException: In-use connections equal max-pool-size and expired max-wait-time. Cannot allocate more connections.]]
+
+[2019-11-06T17:30:08.930+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.resource.resourceadapter.com.sun.gjc.spi] [tid: _ThreadID=40 _ThreadName=http-thread-pool::http-listener-1(5)] [timeMillis: 1573057808930] [levelValue: 900] [[
+  RAR5114 : Error allocating connection : [Error in allocating a connection. Cause: In-use connections equal max-pool-size and expired max-wait-time. Cannot allocate more connections.]]]
+
+[2019-11-06T17:30:08.934+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=40 _ThreadName=http-thread-pool::http-listener-1(5)] [timeMillis: 1573057808934] [levelValue: 900] [[
+  StandardWrapperValve[HomeServlet]: Servlet.service() for servlet HomeServlet threw exception
+javax.ejb.EJBException: Attempt to invoke when container is in Undeployed
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2122)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2117)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:220)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:90)
+	at com.sun.proxy.$Proxy402.getAllVols(Unknown Source)
+	at web.controllers.HomeServlet.doGet(HomeServlet.java:21)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-11-06T17:30:08.940+0100] [Payara 5.193] [INFO] [AS-WEB-CORE-00306] [javax.enterprise.web.core] [tid: _ThreadID=40 _ThreadName=http-thread-pool::http-listener-1(5)] [timeMillis: 1573057808940] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2019-11-06T17:30:20.974+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors] [tid: _ThreadID=36 _ThreadName=http-thread-pool::http-listener-1(1)] [timeMillis: 1573057820974] [levelValue: 900] [[
+  RAR5117 : Failed to obtain/create connection from connection pool [ dbVol-Pool ]. Reason : com.sun.appserv.connectors.internal.api.PoolingException: In-use connections equal max-pool-size and expired max-wait-time. Cannot allocate more connections.]]
+
+[2019-11-06T17:30:20.975+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.resource.resourceadapter.com.sun.gjc.spi] [tid: _ThreadID=36 _ThreadName=http-thread-pool::http-listener-1(1)] [timeMillis: 1573057820975] [levelValue: 900] [[
+  RAR5114 : Error allocating connection : [Error in allocating a connection. Cause: In-use connections equal max-pool-size and expired max-wait-time. Cannot allocate more connections.]]]
+
+[2019-11-06T17:30:20.976+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=36 _ThreadName=http-thread-pool::http-listener-1(1)] [timeMillis: 1573057820976] [levelValue: 900] [[
+  StandardWrapperValve[HomeServlet]: Servlet.service() for servlet HomeServlet threw exception
+javax.ejb.EJBException: Attempt to invoke when container is in Undeployed
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2122)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2117)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:220)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:90)
+	at com.sun.proxy.$Proxy402.getAllVols(Unknown Source)
+	at web.controllers.HomeServlet.doGet(HomeServlet.java:21)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-11-06T17:30:30.710+0100] [Payara 5.193] [INFO] [NCLS-REST-00001] [javax.enterprise.admin.rest] [tid: _ThreadID=52 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573057830710] [levelValue: 800] [[
+  Listening to REST requests at context: /command/domain.]]
+
+[2019-11-06T17:30:30.844+0100] [Payara 5.193] [INFO] [NCLS-CORE-00092] [javax.enterprise.system.core] [tid: _ThreadID=746 _ThreadName=Thread-38] [timeMillis: 1573057830844] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2019-11-06T17:30:30.856+0100] [Payara 5.193] [INFO] [] [] [tid: _ThreadID=746 _ThreadName=Thread-38] [timeMillis: 1573057830856] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2019-11-06T17:30:30.861+0100] [Payara 5.193] [INFO] [NCLS-JMX-00002] [javax.enterprise.system.jmx] [tid: _ThreadID=746 _ThreadName=Thread-38] [timeMillis: 1573057830861] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2019-11-06T17:30:30.862+0100] [Payara 5.193] [INFO] [NCLS-JMX-00001] [javax.enterprise.system.jmx] [tid: _ThreadID=746 _ThreadName=Thread-38] [timeMillis: 1573057830862] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2019-11-06T17:30:33.304+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=749 _ThreadName=RunLevelControllerThread-1573057830912] [timeMillis: 1573057833304] [levelValue: 800] [[
+  Hazelcast Instance Unbound from JNDI at payara/Hazelcast]]
+
+[2019-11-06T17:30:33.305+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=749 _ThreadName=RunLevelControllerThread-1573057830912] [timeMillis: 1573057833305] [levelValue: 800] [[
+  JSR107 Caching Provider Unbound from JNDI at payara/CachingProvider]]
+
+[2019-11-06T17:30:33.306+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=749 _ThreadName=RunLevelControllerThread-1573057830912] [timeMillis: 1573057833306] [levelValue: 800] [[
+  JSR107 Cache Manager Unbound from JNDI at payara/CacheManager]]
+
+[2019-11-06T17:30:33.401+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=749 _ThreadName=RunLevelControllerThread-1573057830912] [timeMillis: 1573057833401] [levelValue: 800] [[
+  Shutdown Hazelcast]]
+
+[2019-11-06T17:30:33.417+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors] [tid: _ThreadID=38 _ThreadName=http-thread-pool::http-listener-1(3)] [timeMillis: 1573057833417] [levelValue: 900] [[
+  RAR5117 : Failed to obtain/create connection from connection pool [ dbVol-Pool ]. Reason : com.sun.appserv.connectors.internal.api.PoolingException: Server is shutting down, cannot get connection]]
+
+[2019-11-06T17:30:33.418+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.resource.resourceadapter.com.sun.gjc.spi] [tid: _ThreadID=38 _ThreadName=http-thread-pool::http-listener-1(3)] [timeMillis: 1573057833418] [levelValue: 900] [[
+  RAR5114 : Error allocating connection : [Error in allocating a connection. Cause: Server is shutting down, cannot get connection]]]
+
+[2019-11-06T17:30:33.421+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=38 _ThreadName=http-thread-pool::http-listener-1(3)] [timeMillis: 1573057833421] [levelValue: 900] [[
+  StandardWrapperValve[Login]: Servlet.service() for servlet Login threw exception
+javax.ejb.EJBException: Attempt to invoke when container is in STOPPED
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2122)
+	at com.sun.ejb.containers.BaseContainer.postInvoke(BaseContainer.java:2117)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:220)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:90)
+	at com.sun.proxy.$Proxy404.loginControl(Unknown Source)
+	at web.controllers.LoginServlet.doPost(LoginServlet.java:24)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-11-06T17:30:33.458+0100] [Payara 5.193] [INFO] [] [] [tid: _ThreadID=752 _ThreadName=RunLevelControllerThread-1573057830914] [timeMillis: 1573057833458] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource]]]
+
+[2019-11-06T17:30:33.506+0100] [Payara 5.193] [INFO] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.service] [tid: _ThreadID=754 _ThreadName=Thread-45] [timeMillis: 1573057833506] [levelValue: 800] [[
+  RAR7094: __ds_jdbc_ra shutdown successful.]]
+
+[2019-11-06T17:33:25.413+0100] [] [INFO] [NCLS-GFLAUNCHER-00005] [javax.enterprise.launcher] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1573058005413] [levelValue: 800] [[
+  JVM invocation command line:
+/usr/lib/jvm/java-8-openjdk/bin/java
+-cp
+/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/modules/glassfish.jar
+-agentlib:jdwp=transport=dt_socket,address=9009,server=n,suspend=y
+-XX:+UnlockDiagnosticVMOptions
+-XX:NewRatio=2
+-Xbootclasspath/p:/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/lib/grizzly-npn-bootstrap-1.8.1.jar
+-Xmx512m
+-client
+-javaagent:/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/lib/monitor/flashlight-agent.jar
+-Djavax.xml.accessExternalSchema=all
+-Djavax.net.ssl.trustStore=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains/domain1/config/cacerts.jks
+-Djdk.tls.rejectClientInitiatedRenegotiation=true
+-Djdk.corba.allowOutputStreamSubclass=true
+-Dfelix.fileinstall.dir=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/modules/autostart/
+-Dorg.glassfish.additionalOSGiBundlesToStart=org.apache.felix.shell,org.apache.felix.gogo.runtime,org.apache.felix.gogo.shell,org.apache.felix.gogo.command,org.apache.felix.shell.remote,org.apache.felix.fileinstall
+-Dcom.sun.aas.installRoot=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish
+-Dfelix.fileinstall.poll=5000
+-Djava.security.policy=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains/domain1/config/server.policy
+-Djava.endorsed.dirs=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/modules/endorsed:/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/lib/endorsed
+-Dosgi.shell.telnet.maxconn=1
+-Dfelix.fileinstall.bundles.startTransient=true
+-Dcom.sun.enterprise.config.config_environment_factory_class=com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory
+-Dfelix.fileinstall.log.level=2
+-Djavax.net.ssl.keyStore=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains/domain1/config/keystore.jks
+-Djava.security.auth.login.config=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains/domain1/config/login.conf
+-Dfelix.fileinstall.disableConfigSave=false
+-Dorg.glassfish.grizzly.DEFAULT_MEMORY_MANAGER=org.glassfish.grizzly.memory.HeapMemoryManager
+-Dfelix.fileinstall.bundles.new.start=true
+-Dcom.sun.aas.instanceRoot=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains/domain1
+-Dosgi.shell.telnet.port=6666
+-Dgosh.args=--nointeractive
+-Dcom.sun.enterprise.security.httpsOutboundKeyAlias=s1as
+-Dorg.jboss.weld.serialization.beanIdentifierIndexOptimization=false
+-Dosgi.shell.telnet.ip=127.0.0.1
+-DANTLR_USE_DIRECT_CLASS_LOADING=true
+-Djava.awt.headless=true
+-Dcom.ctc.wstx.returnNullForDefaultNamespace=true
+-Djava.ext.dirs=/usr/lib/jvm/java-8-openjdk/lib/ext:/usr/lib/jvm/java-8-openjdk/jre/lib/ext:/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains/domain1/lib/ext
+-Djdbc.drivers=org.apache.derby.jdbc.ClientDriver
+-Dorg.glassfish.grizzly.nio.DefaultSelectorHandler.force-selector-spin-detection=true
+-Djava.library.path=/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+com.sun.enterprise.glassfish.bootstrap.ASMain
+-upgrade
+false
+-domaindir
+/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains/domain1
+-read-stdin
+true
+-asadmin-args
+--host,,,localhost,,,--port,,,4848,,,--secure=false,,,--terse=false,,,--extraterse=false,,,--echo=false,,,--interactive=false,,,--autoname=false,,,start-domain,,,--verbose=false,,,--watchdog=false,,,--debug=true,,,--domaindir,,,/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/domains,,,domain1
+-domainname
+domain1
+-instancename
+server
+-type
+DAS
+-verbose
+false
+-asadmin-classpath
+/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/images/payara5/glassfish/lib/client/appserver-cli.jar
+-debug
+true
+-asadmin-classname
+com.sun.enterprise.admin.cli.AdminMain
+-watchdog
+false]]
+
+[2019-11-06T17:33:29.831+0100] [Payara 5.193] [INFO] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573058009677] [timeMillis: 1573058009831] [levelValue: 800] [[
+  Running Payara Version: Payara Server  5.193.1 #badassfish (build 275)]]
+
+[2019-11-06T17:33:29.840+0100] [Payara 5.193] [INFO] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573058009677] [timeMillis: 1573058009840] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2019-11-06T17:33:30.419+0100] [Payara 5.193] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573058009677] [timeMillis: 1573058010419] [levelValue: 800] [[
+  Registered fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactoryProxy for persistence-type = hazelcast in BackingStoreFactoryRegistry]]
+
+[2019-11-06T17:33:30.656+0100] [Payara 5.193] [INFO] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1573058009676] [timeMillis: 1573058010656] [levelValue: 800] [[
+  Network Listener http-listener-1 started in: 23ms - bound to [/0.0.0.0:8080]]]
+
+[2019-11-06T17:33:30.747+0100] [Payara 5.193] [INFO] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1573058009676] [timeMillis: 1573058010747] [levelValue: 800] [[
+  Network Listener http-listener-2 started in: 12ms - bound to [/0.0.0.0:8181]]]
+
+[2019-11-06T17:33:30.789+0100] [Payara 5.193] [INFO] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1573058009676] [timeMillis: 1573058010789] [levelValue: 800] [[
+  Network Listener admin-listener started in: 1ms - bound to [/0.0.0.0:4848]]]
+
+[2019-11-06T17:33:30.792+0100] [Payara 5.193] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1573058009676] [timeMillis: 1573058010792] [levelValue: 800] [[
+  Grizzly 2.4.3 started in: 780ms - bound to [http-listener-1:8080, http-listener-2:8181, admin-listener:4848]]]
+
+[2019-11-06T17:33:31.266+0100] [Payara 5.193] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=29 _ThreadName=RunLevelControllerThread-1573058009677] [timeMillis: 1573058011266] [levelValue: 800] [[
+  HV000001: Hibernate Validator 6.0.16.Final]]
+
+[2019-11-06T17:33:31.290+0100] [Payara 5.193] [INFO] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1573058009676] [timeMillis: 1573058011290] [levelValue: 800] [[
+  Network Listener iiop-service started in: 10ms - bound to [/0.0.0.0:3700]]]
+
+[2019-11-06T17:33:31.794+0100] [Payara 5.193] [INFO] [] [javax.enterprise.resource.corba.org.glassfish.enterprise.iiop.api] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058011794] [levelValue: 800] [[
+  GlassFishORBFactory service initialized.]]
+
+[2019-11-06T17:33:32.254+0100] [Payara 5.193] [INFO] [NCLS-SECURITY-01002] [javax.enterprise.system.core.security] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058012254] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2019-11-06T17:33:32.255+0100] [Payara 5.193] [INFO] [NCLS-SECURITY-01010] [javax.enterprise.system.core.security] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058012255] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2019-11-06T17:33:32.261+0100] [Payara 5.193] [INFO] [NCLS-SECURITY-01143] [javax.enterprise.system.core.security] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058012261] [levelValue: 800] [[
+  Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2019-11-06T17:33:32.325+0100] [Payara 5.193] [INFO] [NCLS-SECURITY-01011] [javax.enterprise.system.core.security] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058012325] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2019-11-06T17:33:32.620+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058012620] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2019-11-06T17:33:32.632+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058012632] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2019-11-06T17:33:32.634+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058012634] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2019-11-06T17:33:32.672+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058012672] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2019-11-06T17:33:32.677+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058012677] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2019-11-06T17:33:33.048+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058013048] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2019-11-06T17:33:34.860+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=31 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058014860] [levelValue: 800] [[
+  Hazelcast Instance Bound to JNDI at payara/Hazelcast]]
+
+[2019-11-06T17:33:34.861+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=31 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058014861] [levelValue: 800] [[
+  JSR107 Caching Provider Bound to JNDI at payara/CachingProvider]]
+
+[2019-11-06T17:33:34.861+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=31 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058014861] [levelValue: 800] [[
+  JSR107 Default Cache Manager Bound to JNDI at payara/CacheManager]]
+
+[2019-11-06T17:33:35.754+0100] [Payara 5.193] [INFO] [] [org.jboss.weld.Version] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058015754] [levelValue: 800] [[
+  WELD-000900: 3.1.1 (Final)]]
+
+[2019-11-06T17:33:35.932+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058015932] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T17:33:35.971+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058015971] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T17:33:35.979+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058015979] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T17:33:35.986+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058015986] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T17:33:38.101+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058018101] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T17:33:38.112+0100] [Payara 5.193] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058018112] [levelValue: 800] [[
+  Loading application Project-One done in 7,496 ms]]
+
+[2019-11-06T17:33:38.252+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058018252] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T17:33:38.337+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058018337] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T17:33:39.258+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=30 _ThreadName=RunLevelControllerThread-1573058009684] [timeMillis: 1573058019258] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T17:33:39.310+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.cluster.PayaraCluster] [tid: _ThreadID=133 _ThreadName=Executor-Service-5] [timeMillis: 1573058019310] [levelValue: 800] [[
+  Data Grid Status 
+Payara Data Grid State: DG Version: 35 DG Name: development DG Size: 1
+Instances: {
+ DataGrid: development Instance Group: MicroShoal Name: server Lite: false This: true UUID: b93844d1-0f15-47c3-a1be-5aae3b14356a Address: /10.192.104.118:4900
+}]]
+
+[2019-11-06T17:33:39.313+0100] [Payara 5.193] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1573058019313] [levelValue: 800] [[
+  Payara Server  5.193.1 #badassfish (275) startup time : Felix (3,497ms), startup services(9,643ms), total(13,140ms)]]
+
+[2019-11-06T17:33:39.318+0100] [Payara 5.193] [INFO] [] [fish.payara.nucleus.notification.NotificationService] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1573058019318] [levelValue: 800] [[
+  Payara Notification Service bootstrapped with configuration: NotificationExecutionOptions{enabled=true, notifierConfigurationExecutionOptionsList={LOG=LogNotifierConfigurationExecutionOptions{useSeparateLogFile=false} NotifierConfigurationExecutionOptions{notifierType=LOG, enabled=true, noisy=true}}}]]
+
+[2019-11-06T17:33:39.508+0100] [Payara 5.193] [INFO] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=28 _ThreadName=RunLevelControllerThread-1573058009676] [timeMillis: 1573058019508] [levelValue: 800] [[
+  Network Listener JMS_PROXY_default_JMS_host started in: 2ms - bound to [/0.0.0.0:7676]]]
+
+[2019-11-06T17:33:39.677+0100] [Payara 5.193] [INFO] [NCLS-JMX-00005] [javax.enterprise.system.jmx] [tid: _ThreadID=136 _ThreadName=Thread-11] [timeMillis: 1573058019677] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://0.0.0.0:8686/jndi/rmi://0.0.0.0:8686/jmxrmi]]
+
+[2019-11-06T17:33:39.689+0100] [Payara 5.193] [INFO] [] [org.jvnet.hk2.osgiadapter] [tid: _ThreadID=23 _ThreadName=FelixStartLevel] [timeMillis: 1573058019689] [levelValue: 800] [[
+  Skipping registration of inhabitant for service reference [org.osgi.service.metatype.MetaTypeProvider] as the service object could not be obtained.]]
+
+[2019-11-06T17:33:41.569+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573058021569] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T17:33:41.581+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573058021581] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T17:33:41.592+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573058021592] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T17:33:41.602+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573058021602] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T17:33:42.114+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573058022114] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T17:33:42.160+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573058022160] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T17:33:42.185+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573058022185] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T17:33:42.386+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573058022386] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T17:33:42.540+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573058022540] [levelValue: 800] [[
+  Project-One was successfully deployed in 2,482 milliseconds.]]
+
+[2019-11-06T17:46:25.262+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.web.core] [tid: _ThreadID=36 _ThreadName=http-thread-pool::http-listener-1(1)] [timeMillis: 1573058785262] [levelValue: 900] [[
+  Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: /WEB-INF/pages/includes/footer.jsp(8,0) PWC5988: Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: text/html;charset=UTF-8, new: text/html)
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:81)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:376)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:204)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:173)
+	at org.apache.jasper.compiler.Node$PageDirective.accept(Node.java:600)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2353)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:499)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:140)
+	at org.apache.jasper.compiler.Node$IncludeDirective.accept(Node.java:648)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2353)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:499)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Validator.validate(Validator.java:1834)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:223)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:451)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:627)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:375)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.ApplicationDispatcher.doInvoke(ApplicationDispatcher.java:820)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:684)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:524)
+	at org.apache.catalina.core.ApplicationDispatcher.doDispatch(ApplicationDispatcher.java:494)
+	at org.apache.catalina.core.ApplicationDispatcher.dispatch(ApplicationDispatcher.java:376)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:326)
+	at web.controllers.MyAccountServlet.doGet(MyAccountServlet.java:27)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-11-06T17:46:25.267+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=36 _ThreadName=http-thread-pool::http-listener-1(1)] [timeMillis: 1573058785267] [levelValue: 900] [[
+  StandardWrapperValve[MyAccount]: Servlet.service() for servlet MyAccount threw exception
+org.apache.jasper.JasperException: /WEB-INF/pages/includes/footer.jsp(8,0) PWC5988: Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: text/html;charset=UTF-8, new: text/html)
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:81)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:376)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:204)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:173)
+	at org.apache.jasper.compiler.Node$PageDirective.accept(Node.java:600)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2353)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:499)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:140)
+	at org.apache.jasper.compiler.Node$IncludeDirective.accept(Node.java:648)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2353)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:499)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Validator.validate(Validator.java:1834)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:223)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:451)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:627)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:375)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.ApplicationDispatcher.doInvoke(ApplicationDispatcher.java:820)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:684)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:524)
+	at org.apache.catalina.core.ApplicationDispatcher.doDispatch(ApplicationDispatcher.java:494)
+	at org.apache.catalina.core.ApplicationDispatcher.dispatch(ApplicationDispatcher.java:376)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:326)
+	at web.controllers.MyAccountServlet.doGet(MyAccountServlet.java:27)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-11-06T17:46:33.703+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.web.core] [tid: _ThreadID=37 _ThreadName=http-thread-pool::http-listener-1(2)] [timeMillis: 1573058793703] [levelValue: 900] [[
+  Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: /WEB-INF/pages/includes/footer.jsp(8,0) PWC5988: Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: text/html;charset=UTF-8, new: text/html)
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:81)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:376)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:204)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:173)
+	at org.apache.jasper.compiler.Node$PageDirective.accept(Node.java:600)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2353)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:499)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:140)
+	at org.apache.jasper.compiler.Node$IncludeDirective.accept(Node.java:648)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2353)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:499)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Validator.validate(Validator.java:1834)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:223)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:451)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:627)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:375)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.ApplicationDispatcher.doInvoke(ApplicationDispatcher.java:820)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:684)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:524)
+	at org.apache.catalina.core.ApplicationDispatcher.doDispatch(ApplicationDispatcher.java:494)
+	at org.apache.catalina.core.ApplicationDispatcher.dispatch(ApplicationDispatcher.java:376)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:326)
+	at web.controllers.MyAccountServlet.doGet(MyAccountServlet.java:27)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-11-06T17:46:33.705+0100] [Payara 5.193] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=37 _ThreadName=http-thread-pool::http-listener-1(2)] [timeMillis: 1573058793705] [levelValue: 900] [[
+  StandardWrapperValve[MyAccount]: Servlet.service() for servlet MyAccount threw exception
+org.apache.jasper.JasperException: /WEB-INF/pages/includes/footer.jsp(8,0) PWC5988: Page directive: illegal to have multiple occurrences of 'contentType' with different values (old: text/html;charset=UTF-8, new: text/html)
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:81)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:376)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:204)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:173)
+	at org.apache.jasper.compiler.Node$PageDirective.accept(Node.java:600)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2353)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:499)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:140)
+	at org.apache.jasper.compiler.Node$IncludeDirective.accept(Node.java:648)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2353)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:499)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297)
+	at org.apache.jasper.compiler.Validator.validate(Validator.java:1834)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:223)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:451)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:627)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:375)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.ApplicationDispatcher.doInvoke(ApplicationDispatcher.java:820)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:684)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:524)
+	at org.apache.catalina.core.ApplicationDispatcher.doDispatch(ApplicationDispatcher.java:494)
+	at org.apache.catalina.core.ApplicationDispatcher.dispatch(ApplicationDispatcher.java:376)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:326)
+	at web.controllers.MyAccountServlet.doGet(MyAccountServlet.java:27)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1628)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:755)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:575)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-11-06T18:10:39.645+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor] [tid: _ThreadID=94 _ThreadName=hz._hzInstance_1_development.InvocationMonitorThread] [timeMillis: 1573060239645] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] MonitorInvocationsTask delayed 1153916 ms]]
+
+[2019-11-06T18:10:39.673+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.internal.cluster.impl.ClusterHeartbeatManager] [tid: _ThreadID=209 _ThreadName=hz._hzInstance_1_development.cached.thread-19] [timeMillis: 1573060239673] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 1150956 ms, Heartbeat-Timeout: 60000 ms]]
+
+[2019-11-06T18:10:42.623+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor] [tid: _ThreadID=94 _ThreadName=hz._hzInstance_1_development.InvocationMonitorThread] [timeMillis: 1573060242623] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] BroadcastOperationControlTask delayed 1148893 ms]]
+
+[2019-11-06T19:20:58.393+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064458393] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T19:20:58.405+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064458405] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T19:20:58.417+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064458417] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T19:20:58.427+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064458427] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T19:20:58.935+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064458935] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T19:20:58.979+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064458979] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T19:20:58.991+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064458991] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T19:20:59.103+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064459103] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T19:20:59.163+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064459163] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,735 milliseconds.]]
+
+[2019-11-06T19:27:49.311+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor] [tid: _ThreadID=94 _ThreadName=hz._hzInstance_1_development.InvocationMonitorThread] [timeMillis: 1573064869311] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] MonitorInvocationsTask delayed 329296 ms]]
+
+[2019-11-06T19:27:49.316+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor] [tid: _ThreadID=94 _ThreadName=hz._hzInstance_1_development.InvocationMonitorThread] [timeMillis: 1573064869316] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] BroadcastOperationControlTask delayed 320598 ms]]
+
+[2019-11-06T19:27:53.144+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.internal.cluster.impl.ClusterHeartbeatManager] [tid: _ThreadID=304 _ThreadName=hz._hzInstance_1_development.cached.thread-18] [timeMillis: 1573064873144] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 330342 ms, Heartbeat-Timeout: 60000 ms]]
+
+[2019-11-06T19:27:53.904+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064873904] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T19:27:53.913+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064873913] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T19:27:53.922+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064873922] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T19:27:53.931+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064873931] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T19:27:54.435+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064874435] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T19:27:54.505+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064874505] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T19:27:54.576+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064874576] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T19:27:54.718+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064874718] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T19:27:54.783+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573064874783] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,581 milliseconds.]]
+
+[2019-11-06T19:28:00.655+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573064880655] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T19:28:00.661+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573064880661] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T19:28:00.667+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573064880667] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T19:28:00.675+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573064880675] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T19:28:01.033+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573064881033] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T19:28:01.073+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573064881073] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T19:28:01.094+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573064881094] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T19:28:01.265+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573064881265] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T19:28:01.327+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573064881327] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,313 milliseconds.]]
+
+[2019-11-06T19:32:00.217+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065120217] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T19:32:00.223+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065120223] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T19:32:00.230+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065120230] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T19:32:00.236+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065120236] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T19:32:00.539+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065120539] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T19:32:00.577+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065120577] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T19:32:00.591+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065120591] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T19:32:00.709+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065120709] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T19:32:00.779+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065120779] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,057 milliseconds.]]
+
+[2019-11-06T19:32:52.154+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573065172154] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T19:32:52.163+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573065172163] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T19:32:52.170+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573065172170] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T19:32:52.177+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573065172177] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T19:32:52.483+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573065172483] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T19:32:52.513+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573065172513] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T19:32:52.529+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573065172529] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T19:32:52.675+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573065172675] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T19:32:52.768+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=351 _ThreadName=admin-thread-pool::admin-listener(2)] [timeMillis: 1573065172768] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,109 milliseconds.]]
+
+[2019-11-06T19:40:24.361+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065624361] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-06T19:40:24.371+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065624371] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-06T19:40:24.379+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065624379] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-06T19:40:24.386+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065624386] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-06T19:40:24.756+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065624756] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-06T19:40:24.786+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065624786] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-06T19:40:24.799+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065624799] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-06T19:40:24.939+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065624939] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-06T19:40:25.035+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573065625035] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,203 milliseconds.]]
+
+[2019-11-07T10:39:34.691+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor] [tid: _ThreadID=94 _ThreadName=hz._hzInstance_1_development.InvocationMonitorThread] [timeMillis: 1573119574691] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] MonitorInvocationsTask delayed 37793070 ms]]
+
+[2019-11-07T10:39:34.693+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.spi.impl.operationservice.impl.InvocationMonitor] [tid: _ThreadID=94 _ThreadName=hz._hzInstance_1_development.InvocationMonitorThread] [timeMillis: 1573119574693] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] BroadcastOperationControlTask delayed 37792071 ms]]
+
+[2019-11-07T10:39:34.716+0100] [Payara 5.193] [WARNING] [] [com.hazelcast.internal.cluster.impl.ClusterHeartbeatManager] [tid: _ThreadID=581 _ThreadName=hz._hzInstance_1_development.cached.thread-6] [timeMillis: 1573119574716] [levelValue: 900] [[
+  [10.192.104.118]:4900 [development] [3.12] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 37792111 ms, Heartbeat-Timeout: 60000 ms]]
+
+[2019-11-07T10:45:14.532+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573119914532] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-07T10:45:14.540+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573119914540] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-07T10:45:14.548+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573119914548] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-07T10:45:14.553+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573119914553] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-07T10:45:14.936+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573119914936] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-07T10:45:14.961+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573119914961] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-07T10:45:14.973+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573119914973] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-07T10:45:15.096+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573119915096] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-07T10:45:15.177+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573119915177] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,173 milliseconds.]]
+
+[2019-11-07T12:16:48.566+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573125408566] [levelValue: 800] [[
+  Portable JNDI names for EJB TrajetDAO: [java:global/Project-One/TrajetDAO!services.dao.TrajetDAOLocal, java:global/Project-One/TrajetDAO]]]
+
+[2019-11-07T12:16:48.575+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573125408575] [levelValue: 800] [[
+  Portable JNDI names for EJB PiloteDAO: [java:global/Project-One/PiloteDAO, java:global/Project-One/PiloteDAO!services.dao.PiloteDAOLocal]]]
+
+[2019-11-07T12:16:48.581+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573125408581] [levelValue: 800] [[
+  Portable JNDI names for EJB VolDAO: [java:global/Project-One/VolDAO!services.dao.VolDAOLocal, java:global/Project-One/VolDAO]]]
+
+[2019-11-07T12:16:48.588+0100] [Payara 5.193] [INFO] [AS-EJB-00054] [javax.enterprise.ejb.container] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573125408588] [levelValue: 800] [[
+  Portable JNDI names for EJB AvionDAO: [java:global/Project-One/AvionDAO, java:global/Project-One/AvionDAO!services.dao.AvionDAOLocal]]]
+
+[2019-11-07T12:16:48.885+0100] [Payara 5.193] [INFO] [] [fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573125408885] [levelValue: 800] [[
+  Clustered CDI Event bus initialized]]
+
+[2019-11-07T12:16:48.919+0100] [Payara 5.193] [INFO] [] [org.glassfish.soteria.servlet.SamRegistrationInstaller] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573125408919] [levelValue: 800] [[
+  Initializing Soteria 1.1-b01 for context '/Project-One']]
+
+[2019-11-07T12:16:48.934+0100] [Payara 5.193] [INFO] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573125408934] [levelValue: 800] [[
+  Initializing Mojarra 2.3.9.payara-p3 for context '/Project-One']]
+
+[2019-11-07T12:16:49.070+0100] [Payara 5.193] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573125409070] [levelValue: 800] [[
+  Loading application [Project-One] at [/Project-One]]]
+
+[2019-11-07T12:16:49.165+0100] [Payara 5.193] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1573125409165] [levelValue: 800] [[
+  Project-One was successfully deployed in 1,202 milliseconds.]]
+

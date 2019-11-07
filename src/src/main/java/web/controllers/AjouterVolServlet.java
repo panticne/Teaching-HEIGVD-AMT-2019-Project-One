@@ -40,7 +40,7 @@ public class AjouterVolServlet extends HttpServlet {
         request.setAttribute("trajets", trajets);
         request.setAttribute("title", "Ajouter un vol");
         request.setAttribute("piloteId", pilotId);
-        request.getRequestDispatcher("/WEB-INF/pages/ajouterVol.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/pages/restreint/ajouterVol.jsp").forward(request, response);
     }
 
 
@@ -54,6 +54,6 @@ public class AjouterVolServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        request.getRequestDispatcher("/WEB-INF/pages/mesVols.jsp").forward(request, response);
+        response.sendRedirect("/Project-One/pages/mesVols");
     }
 }

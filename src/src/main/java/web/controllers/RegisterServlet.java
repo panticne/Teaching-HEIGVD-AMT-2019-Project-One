@@ -38,6 +38,6 @@ public class RegisterServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        response.sendRedirect("/Project-One/pages/home.jsp");
+        response.sendRedirect("/Project-One/pages/home");
     }
 }

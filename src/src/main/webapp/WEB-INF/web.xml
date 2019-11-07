@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
   <display-name>Archetype Created Web Application</display-name>
-  <servlet>
-    <servlet-name>AvionServlet</servlet-name>
-    <servlet-class>web.controllers.AvionServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>AvionServlet</servlet-name>
-    <url-pattern>/avion/*</url-pattern>
-  </servlet-mapping>
+  <filter>
+    <filter-name>Security</filter-name>
+    <filter-class>web.filters.SecurityFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Security</filter-name>
+    <url-pattern>/pages/*</url-pattern>
+  </filter-mapping>
 
   <servlet>
     <servlet-name>HomeServlet</servlet-name>
     <servlet-class>web.controllers.HomeServlet</servlet-class>
   </servlet>
-
   <servlet-mapping>
     <servlet-name>HomeServlet</servlet-name>
     <url-pattern>/pages/home</url-pattern>
@@ -26,7 +25,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Registration</servlet-name>
-    <url-pattern>/pages/register</url-pattern>
+    <url-pattern>/register</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -35,7 +34,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Login</servlet-name>
-    <url-pattern>/pages/login</url-pattern>
+    <url-pattern>/login</url-pattern>
   </servlet-mapping>
 
   <servlet>

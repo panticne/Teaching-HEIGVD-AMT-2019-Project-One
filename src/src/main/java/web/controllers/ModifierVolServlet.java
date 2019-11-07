@@ -47,7 +47,7 @@ public class ModifierVolServlet extends HttpServlet {
         request.setAttribute("avions", avions);
         request.setAttribute("trajets", trajets);
         request.setAttribute("title", title);
-        request.getRequestDispatcher("/WEB-INF/pages/modifierVol.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/pages/restreint/modifierVol.jsp").forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
@@ -61,6 +61,6 @@ public class ModifierVolServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        request.getRequestDispatcher("/WEB-INF/pages/mesVols.jsp").forward(request, response);
+        response.sendRedirect("/Project-One/pages/mesVols");
     }
 }

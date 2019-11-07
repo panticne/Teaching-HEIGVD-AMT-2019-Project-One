@@ -1,14 +1,15 @@
-/* AUTOMATICALLY GENERATED ON Tue Nov 05 22:09:49 CET 2019*/
+/* AUTOMATICALLY GENERATED ON Thu Nov 07 12:16:48 CET 2019*/
 /* DO NOT EDIT */
 
 grant {
   permission javax.security.jacc.EJBMethodPermission "PiloteDAO", "getAllPilotes,Local,";
   permission javax.security.jacc.EJBMethodPermission "TrajetDAO", "getTrajetById,Local,int";
-  permission javax.security.jacc.EJBMethodPermission "VolDAO", "getVolById,Local,int";
-  permission javax.security.jacc.EJBMethodPermission "VolDAO", "changerVol,Local,int,int,int";
   permission javax.security.jacc.EJBMethodPermission "PiloteDAO", "getPiloteById,Local,int";
   permission javax.security.jacc.EJBMethodPermission "PiloteDAO", "changePassword,Local,int,java.lang.String,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "VolDAO", "getVolById,Local,int";
+  permission javax.security.jacc.EJBMethodPermission "VolDAO", "changerVol,Local,int,int,int";
   permission javax.security.jacc.EJBMethodPermission "PiloteDAO", "getPiloteId,Local,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "VolDAO", "ajouterVol,Local,int,int,int";
   permission javax.security.jacc.EJBMethodPermission "VolDAO", "getVolByPiloteId,Local,int";
   permission javax.security.jacc.EJBMethodPermission "VolDAO", "deleteVolById,Local,int";
   permission javax.security.jacc.EJBMethodPermission "VolDAO", "getAllVols,Local,";
@@ -21,8 +22,8 @@ grant {
 
 grant      principal * * {
   permission javax.security.jacc.EJBRoleRefPermission "TrajetDAO", "**";
-  permission javax.security.jacc.EJBRoleRefPermission "VolDAO", "**";
   permission javax.security.jacc.EJBRoleRefPermission "PiloteDAO", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "VolDAO", "**";
   permission javax.security.jacc.EJBRoleRefPermission "AvionDAO", "**";
 };
 

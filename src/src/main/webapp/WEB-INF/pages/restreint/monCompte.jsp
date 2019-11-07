@@ -7,10 +7,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<%@include file="includes/header.jsp"%>
+<%@include file="../includes/header.jsp"%>
 <body>
     <div class="container">
-        <%@include file="includes/nav.jsp"%>
+        <%@include file="../includes/nav.jsp"%>
         <div class="row justify-content-md-center">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
@@ -37,7 +37,7 @@
                 <a class="btn btn-lg btn-primary btn-block" href="/Project-One/pages/changerMdp">Modifier le mot de passe</a>
             </div>
         </div>
-        <%@include file="includes/footer.jsp"%>
+        <%@include file="../includes/footer.jsp"%>
     </div>
 </body>
 </html>

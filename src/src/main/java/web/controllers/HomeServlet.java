@@ -20,6 +20,6 @@ public class HomeServlet extends HttpServlet {
         //response.setContentType("text/html;charset=UTF-8");
         request.setAttribute("vols",volDAO.getAllVols());
         request.setAttribute("title", "Home");
-        request.getRequestDispatcher("/WEB-INF/pages/home.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/pages/restreint/home.jsp").forward(request, response);
     }
 }

@@ -13,6 +13,6 @@ public class LogoutServlet extends HttpServlet {
         HttpSession session = request.getSession();
         session.invalidate();
         request.logout();
-        request.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(request, response);
+        response.sendRedirect("/Project-One/login");
     }
 }

@@ -24,6 +24,6 @@ public class MyAccountServlet extends HttpServlet {
         int pilotId = (int)session.getAttribute("id");
         request.setAttribute("pilote", piloteDAOLocal.getPiloteById(pilotId));
         request.setAttribute("title", "Mon Compte");
-        request.getRequestDispatcher("/WEB-INF/pages/monCompte.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/pages/restreint/monCompte.jsp").forward(request, response);
         }
     }

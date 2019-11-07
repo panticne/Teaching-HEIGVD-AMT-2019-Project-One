@@ -20,7 +20,7 @@ public class ChangerMdpServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         request.setAttribute("title", "Changer le mot de passe");
-        request.getRequestDispatcher("/WEB-INF/pages/changerMdp.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/pages/restreint/changerMdp.jsp").forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
