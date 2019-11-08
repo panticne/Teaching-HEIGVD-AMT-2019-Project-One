@@ -25,7 +25,7 @@ public class LoginServlet extends HttpServlet {
                 HttpSession session = req.getSession();
                 int piloteId = piloteDAO.getPiloteId(pseudo, motdepasse);
                 session.setAttribute("id", piloteId);
-                resp.sendRedirect("/Project-One/pages/home");
+                resp.sendRedirect("/Project-One/pages/home?page=1");
             }else{
                 req.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(req, resp);
             }

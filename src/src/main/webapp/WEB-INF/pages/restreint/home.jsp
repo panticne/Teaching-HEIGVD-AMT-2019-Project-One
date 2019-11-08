@@ -1,4 +1,4 @@
-<%--
+<%@ page import="javax.persistence.criteria.CriteriaBuilder" %><%--
   Created by IntelliJ IDEA.
   User: panticne
   Date: 25/10/2019
@@ -9,7 +9,7 @@
 <html>
 <%@include file="../includes/header.jsp"%>
 <body>
-<div class="container">
+<div class="container text-center">
     <%@include file="../includes/nav.jsp"%>
     <table class="table table-dark">
         <thead>
@@ -37,6 +37,26 @@
             </c:forEach>
         </tbody>
     </table>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <c:if test="${page == 1}">
+                <li class="page-item disabled"><a class="page-link">Previous</a></li>
+            </c:if>
+            <c:if test="${page != 1}">
+                <li class="page-item"><a class="page-link" href="/Project-One/pages/home?page=previous">Previous</a></li>
+            </c:if>
+            <li class="page-item page-link disabled">
+                <a class="page-link" href="">${page}/${nbPages}</a>
+            </li>
+            <c:if test="${page == nbPages}">
+                <li class="page-item disabled"><a class="page-link">Next</a></li>
+            </c:if>
+            <c:if test="${page != nbPages}">
+                <li class="page-item"><a class="page-link" href="/Project-One/pages/home?page=next">Next</a></li>
+            </c:if>
+
+        </ul>
+    </nav>
     <%@include file="../includes/footer.jsp"%>
 </div>
 </body>

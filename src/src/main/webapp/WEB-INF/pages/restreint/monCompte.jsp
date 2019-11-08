@@ -30,7 +30,7 @@
                     </tr>
                     <tr>
                         <td scope="col">Mot de passe</td>
-                        <td>${pilote.motdepasse}</td>
+                        <td ><input type="password" disabled="disabled" style="border:none;background-image:none;background-color:transparent;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;" value="${pilote.motdepasse}" /></td>
                     </tr>
                     </thead>
                 </table>

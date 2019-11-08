@@ -16,6 +16,8 @@ public class MesVolsServlet extends HttpServlet {
 
     @EJB
     private VolDAOLocal volDAO;
+    private double nbRecordPerPage = 10;
+    private double page = 1;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -23,9 +25,35 @@ public class MesVolsServlet extends HttpServlet {
         //response.setContentType("text/html;charset=UTF-8");
         HttpSession session = request.getSession();
         int pilotId = (int)session.getAttribute("id");
-        List<Vol> vols = volDAO.getVolByPiloteId(pilotId);
+        double nbTotalRecords = volDAO.getNbVolByPiloteId(pilotId);
+        double nbPages = Math.ceil(nbTotalRecords / nbRecordPerPage);
+        String pageRequest = null;
+
+        if((pageRequest = request.getParameter("page")) != null){
+            int pageSelected = (int)page;
+            if(pageRequest.equals("previous")){
+                --pageSelected;
+            }else if(pageRequest.equals("next")){
+                ++pageSelected;
+            }else{
+                try{
+                    pageSelected = Integer.parseInt(pageRequest);
+                }catch (Exception e){
+                    pageSelected = 1;
+                }
+            }
+
+            if(pageSelected <= nbPages) {
+                page = pageSelected;
+            }
+        }else {
+            page = 1;
+        }
+        List<Vol> vols = volDAO.getVolByPiloteId(pilotId, (int)page);
         request.setAttribute("vols", vols);
         request.setAttribute("title", "Mes vols");
+        request.setAttribute("nbPages", (int)nbPages);
+        request.setAttribute("page", (int)page);
         request.getRequestDispatcher("/WEB-INF/pages/restreint/mesVols.jsp").forward(request, response);
     }
 

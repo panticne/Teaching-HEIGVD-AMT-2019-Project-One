@@ -15,7 +15,7 @@
         </div>
         <ul class="nav navbar-nav">
             <li><a href="/Project-One/pages/myAccount">Mon Compte</a></li>
-            <li><a href="/Project-One/pages/mesVols">Mes vols</a></li>
+            <li><a href="/Project-One/pages/mesVols?page=1">Mes vols</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="/Project-One/pages/logout"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
