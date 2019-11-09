@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 public class ChangerMdpServlet extends HttpServlet {
     @EJB
@@ -23,13 +25,37 @@ public class ChangerMdpServlet extends HttpServlet {
         request.getRequestDispatcher("/WEB-INF/pages/restreint/changerMdp.jsp").forward(request, response);
     }
 
+    private static String getSecurePassword(String passwordToHash)
+    {
+        String generatedPassword = null;
+        try {
+            // Create MessageDigest instance for MD5
+            MessageDigest md = MessageDigest.getInstance("SHA-256");
+            //Get the hash's bytes
+            byte[] bytes = md.digest(passwordToHash.getBytes());
+            //This bytes[] has bytes in decimal format;
+            //Convert it to hexadecimal format
+            StringBuilder sb = new StringBuilder();
+            for(int i=0; i< bytes.length ;i++)
+            {
+                sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
+            }
+            //Get complete hashed password in hex format
+            generatedPassword = sb.toString();
+        }
+        catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        return generatedPassword;
+    }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
         boolean ok = false;
         HttpSession session = request.getSession();
         int pilotId = (int)session.getAttribute("id");
-        String oldPassword = request.getParameter("oldPassword");
-        String newPassword = request.getParameter("newPassword");
-        String confirmPassword = request.getParameter("confirmPassword");
+        String oldPassword = getSecurePassword(request.getParameter("oldPassword"));
+        String newPassword = getSecurePassword(request.getParameter("newPassword"));
+        String confirmPassword = getSecurePassword(request.getParameter("confirmPassword"));
 
         try {
             ok = piloteDAOLocal.changePassword(pilotId, oldPassword, newPassword, confirmPassword);

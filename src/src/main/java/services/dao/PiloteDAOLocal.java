@@ -4,6 +4,8 @@ import model.Pilote;
 import model.Vol;
 
 import javax.ejb.Local;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.util.List;
 
