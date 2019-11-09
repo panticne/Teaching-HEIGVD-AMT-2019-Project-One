@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 public class AjouterVolServlet extends HttpServlet {
@@ -34,7 +35,12 @@ public class AjouterVolServlet extends HttpServlet {
         //response.setContentType("text/html;charset=UTF-8");
         HttpSession session = request.getSession();
         int pilotId = (int)session.getAttribute("id");
-        List<Avion> avions = avionDAOLocal.getAllPlane();
+        List<Avion> avions = null;
+        try {
+            avions = avionDAOLocal.getAllPlane();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         List<Trajet> trajets = trajetDAOLocal.getAllTrajet();
         request.setAttribute("avions", avions);
         request.setAttribute("trajets", trajets);

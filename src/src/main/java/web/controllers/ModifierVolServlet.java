@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 public class ModifierVolServlet extends HttpServlet {
@@ -31,8 +32,18 @@ public class ModifierVolServlet extends HttpServlet {
             throws ServletException, IOException {
         //response.setContentType("text/html;charset=UTF-8");
         int volId = Integer.parseInt(request.getParameter("id"));
-        Vol vol = volDAO.getVolById(volId);
-        List<Avion> avions = avionDAOLocal.getAllPlane();
+        Vol vol = null;
+        try {
+            vol = volDAO.getVolById(volId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        List<Avion> avions = null;
+        try {
+            avions = avionDAOLocal.getAllPlane();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
         List<Trajet> trajets = trajetDAOLocal.getAllTrajet();
         String st = "%s (%s)<br><h2>%s \uD83E\uDC52 %s (%d min.)<h2>";
         String title = String.format(
@@ -56,7 +67,7 @@ public class ModifierVolServlet extends HttpServlet {
         int avionId = Integer.parseInt(request.getParameter("avion"));
         int trajetId = Integer.parseInt(request.getParameter("trajet"));
         try {
-            volDAO.changerVol(volId, avionId, trajetId);
+            volDAO.changerVolbyPilote(volId, avionId, trajetId);
         }catch (Exception e){
             e.printStackTrace();
         }

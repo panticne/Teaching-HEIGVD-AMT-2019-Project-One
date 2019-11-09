@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 public class MesVolsServlet extends HttpServlet {
@@ -25,7 +26,12 @@ public class MesVolsServlet extends HttpServlet {
         //response.setContentType("text/html;charset=UTF-8");
         HttpSession session = request.getSession();
         int pilotId = (int)session.getAttribute("id");
-        double nbTotalRecords = volDAO.getNbVolByPiloteId(pilotId);
+        double nbTotalRecords = 0;
+        try {
+            nbTotalRecords = volDAO.getNbVolByPiloteId(pilotId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         double nbPages = Math.ceil(nbTotalRecords / nbRecordPerPage);
         String pageRequest = null;
 
@@ -43,7 +49,12 @@ public class MesVolsServlet extends HttpServlet {
         }else {
             page = 1;
         }
-        List<Vol> vols = volDAO.getVolByPiloteId(pilotId, (int)page);
+        List<Vol> vols = null;
+        try {
+            vols = volDAO.getVolByPiloteId(pilotId, (int)page);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         request.setAttribute("vols", vols);
         request.setAttribute("title", "Mes vols");
         request.setAttribute("nbPages", (int)nbPages);
@@ -54,7 +65,11 @@ public class MesVolsServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String volId = req.getParameter("id");
-        volDAO.deleteVolById(Integer.parseInt(volId));
+        try {
+            volDAO.deleteVolById(Integer.parseInt(volId));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         resp.sendRedirect("/Project-One/pages/mesVols");
     }
 }

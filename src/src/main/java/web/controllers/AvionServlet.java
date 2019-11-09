@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 
 
 public class AvionServlet extends HttpServlet {
@@ -19,7 +20,11 @@ public class AvionServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //response.setContentType("text/html;charset=UTF-8");
-        request.setAttribute("avions", avionDAO.getAllPlane());
+        try {
+            request.setAttribute("avions", avionDAO.getAllPlane());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         request.getRequestDispatcher("/WEB-INF/pages/avion.jsp").forward(request, response);
     }
 }

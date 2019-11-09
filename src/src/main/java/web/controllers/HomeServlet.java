@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 public class HomeServlet extends HttpServlet {
@@ -22,7 +23,12 @@ public class HomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //response.setContentType("text/html;charset=UTF-8");
-        double nbTotalRecords = volDAO.getNbTotalVols();
+        double nbTotalRecords = 0;
+        try {
+            nbTotalRecords = volDAO.getNbTotalVols();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         double nbPages = Math.ceil(nbTotalRecords / nbRecordPerPage);
         String pageRequest = null;
 
@@ -41,7 +47,12 @@ public class HomeServlet extends HttpServlet {
             page = 1;
         }
 
-        List<Vol> vols = volDAO.getAllVols((int)page);
+        List<Vol> vols = null;
+        try {
+            vols = volDAO.getAllVols((int)page);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         request.setAttribute("vols", vols);
         request.setAttribute("title", "Home");
         request.setAttribute("nbPages", (int)nbPages);
