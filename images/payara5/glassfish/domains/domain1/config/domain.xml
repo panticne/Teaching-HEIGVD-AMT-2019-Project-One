@@ -543,11 +543,11 @@
   <deployment-groups></deployment-groups>
   <clusters></clusters>
   <applications>
-    <application deployment-time="822" context-root="/Project-One" object-type="user" name="Project-One" directory-deployed="true" location="file:/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/src/target/Project-One/" time-deployed="1573223707405">
+    <application deployment-time="2175" context-root="/Project-One" object-type="user" name="Project-One" directory-deployed="true" location="file:/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/src/target/Project-One/" time-deployed="1573313850981">
       <property name="archiveType" value="war"></property>
       <property name="cdiDevModeEnabled" value="false"></property>
       <property name="appLocation" value="file:/home/david/HEIG-VD/AMT/Teaching-HEIGVD-AMT-2019-Project-One/src/target/Project-One/"></property>
-      <property name="org.glassfish.ejb.container.application_unique_id" value="103097538906685440"></property>
+      <property name="org.glassfish.ejb.container.application_unique_id" value="103108606909415424"></property>
       <property name="defaultAppName" value="Project-One"></property>
       <module name="Project-One">
         <engine sniffer="cdi"></engine>

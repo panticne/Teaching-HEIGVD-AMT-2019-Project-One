@@ -75,8 +75,8 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<footer class=\"page-footer font-small special-color-dark pt-4\" >\n");
       out.write("\n");
       out.write("    <!-- Copyright -->\n");
-      out.write("    <div class=\"footer-copyright text-center py-3\">2018 Copyright:\n");
-      out.write("        <a href=\"https://mdbootstrap.com/education/bootstrap/\"> MDBootstrap.com</a>\n");
+      out.write("    <div class=\"footer-copyright text-center py-3\">\n");
+      out.write("        2019 Copyright: HEIG-VD - AMT\n");
       out.write("    </div>\n");
       out.write("    <!-- Copyright -->\n");
       out.write("\n");

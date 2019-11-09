@@ -1,13 +1,13 @@
-/* AUTOMATICALLY GENERATED ON Fri Nov 08 15:35:07 CET 2019*/
+/* AUTOMATICALLY GENERATED ON Sat Nov 09 16:37:30 CET 2019*/
 /* DO NOT EDIT */
 
 grant {
   permission javax.security.jacc.EJBMethodPermission "PiloteDAO", "getAllPilotes,Local,";
   permission javax.security.jacc.EJBMethodPermission "PiloteDAO", "getPiloteById,Local,int";
   permission javax.security.jacc.EJBMethodPermission "PiloteDAO", "changePassword,Local,int,java.lang.String,java.lang.String,java.lang.String";
-  permission javax.security.jacc.EJBMethodPermission "TrajetDAO", "getTrajetById,Local,int";
   permission javax.security.jacc.EJBMethodPermission "VolDAO", "getVolById,Local,int";
   permission javax.security.jacc.EJBMethodPermission "VolDAO", "changerVol,Local,int,int,int";
+  permission javax.security.jacc.EJBMethodPermission "TrajetDAO", "getTrajetById,Local,int";
   permission javax.security.jacc.EJBMethodPermission "VolDAO", "getNbTotalVols,Local,";
   permission javax.security.jacc.EJBMethodPermission "PiloteDAO", "getPiloteId,Local,java.lang.String,java.lang.String";
   permission javax.security.jacc.EJBMethodPermission "VolDAO", "getNbVolByPiloteId,Local,int";
@@ -17,15 +17,15 @@ grant {
   permission javax.security.jacc.EJBMethodPermission "PiloteDAO", "registerPilote,Local,model.Pilote";
   permission javax.security.jacc.EJBMethodPermission "TrajetDAO", "getAllTrajet,Local,";
   permission javax.security.jacc.EJBMethodPermission "PiloteDAO", "loginControl,Local,java.lang.String,java.lang.String";
-  permission javax.security.jacc.EJBMethodPermission "VolDAO", "getAllVols,Local,int";
   permission javax.security.jacc.EJBMethodPermission "AvionDAO", "getAllPlane,Local,";
   permission javax.security.jacc.EJBMethodPermission "AvionDAO", "getAvionById,Local,int";
+  permission javax.security.jacc.EJBMethodPermission "VolDAO", "getAllVols,Local,int";
 };
 
 grant      principal * * {
   permission javax.security.jacc.EJBRoleRefPermission "PiloteDAO", "**";
-  permission javax.security.jacc.EJBRoleRefPermission "TrajetDAO", "**";
   permission javax.security.jacc.EJBRoleRefPermission "VolDAO", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "TrajetDAO", "**";
   permission javax.security.jacc.EJBRoleRefPermission "AvionDAO", "**";
 };
 
