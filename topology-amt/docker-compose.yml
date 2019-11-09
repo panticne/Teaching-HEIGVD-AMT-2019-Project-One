@@ -21,6 +21,7 @@ services:
       # Where our data will be persisted
     volumes:
       - ../data:/docker-entrypoint-initdb.d
+    command: --max-allowed-packet=1000M
 # Names our volume
 volumes:
   my-db:
