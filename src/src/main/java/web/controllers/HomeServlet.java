@@ -32,15 +32,9 @@ public class HomeServlet extends HttpServlet {
                 --pageSelected;
             }else if(pageRequest.equals("next")){
                 ++pageSelected;
-            }else{
-                try{
-                    pageSelected = Integer.parseInt(pageRequest);
-                }catch (Exception e){
-                    pageSelected = 1;
-                }
             }
 
-            if(pageSelected <= nbPages) {
+            if(pageSelected <= nbPages && pageSelected > 0) {
                 page = pageSelected;
             }
         }else {

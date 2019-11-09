@@ -6,7 +6,6 @@ import model.Vol;
 
 import javax.annotation.Resource;
 import javax.ejb.Stateless;
-import javax.persistence.criteria.CriteriaBuilder;
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -19,8 +18,7 @@ public class VolDAO implements VolDAOLocal{
     @Resource(lookup = "jdbc/dbVol")
     private DataSource dataSource;
 
-    private int startPage = 0;
-    private int endPage = 10;
+    private int nbRecordPerPages = 10;
 
     @Override
     public int getNbTotalVols() {
@@ -46,9 +44,9 @@ public class VolDAO implements VolDAOLocal{
 
         try {
             Connection connection = dataSource.getConnection();
-            PreparedStatement pstmt = connection.prepareStatement("SELECT vol.id, pilote_id, prenom, nom, pseudo, motdepasse, avion_id, compagnie, type, trajet_id, depart, arrivee, duree FROM pilote INNER JOIN vol  ON pilote.id = vol.pilote_id INNER JOIN avion ON avion.id = vol.avion_id INNER JOIN trajet ON trajet.id = vol.trajet_id LIMIT ?, ?");
-            pstmt.setInt(1,startPage + (endPage * (nbPage - 1)));
-            pstmt.setInt(2,endPage + (endPage * (nbPage - 1)));
+            PreparedStatement pstmt = connection.prepareStatement("SELECT vol.id, pilote_id, prenom, nom, pseudo, motdepasse, avion_id, compagnie, type, trajet_id, depart, arrivee, duree FROM pilote INNER JOIN vol  ON pilote.id = vol.pilote_id INNER JOIN avion ON avion.id = vol.avion_id INNER JOIN trajet ON trajet.id = vol.trajet_id LIMIT ? OFFSET ?");
+            pstmt.setInt(1, nbRecordPerPages);
+            pstmt.setInt(2, nbRecordPerPages * (nbPage - 1));
             ResultSet rs = pstmt.executeQuery();
 
             while (rs.next()){
@@ -73,10 +71,10 @@ public class VolDAO implements VolDAOLocal{
 
         try {
             Connection connection = dataSource.getConnection();
-            PreparedStatement pstmt = connection.prepareStatement("SELECT vol.id, pilote_id, prenom, nom, pseudo, motdepasse, avion_id, compagnie, type, trajet_id, depart, arrivee, duree FROM pilote INNER JOIN vol  ON pilote.id = vol.pilote_id INNER JOIN avion ON avion.id = vol.avion_id INNER JOIN trajet ON trajet.id = vol.trajet_id WHERE pilote_id = ? LIMIT ?,?");
+            PreparedStatement pstmt = connection.prepareStatement("SELECT vol.id, pilote_id, prenom, nom, pseudo, motdepasse, avion_id, compagnie, type, trajet_id, depart, arrivee, duree FROM pilote INNER JOIN vol  ON pilote.id = vol.pilote_id INNER JOIN avion ON avion.id = vol.avion_id INNER JOIN trajet ON trajet.id = vol.trajet_id WHERE pilote_id = ? LIMIT ? OFFSET ?");
             pstmt.setInt(1, piloteId);
-            pstmt.setInt(2,startPage + (endPage * (nbPage - 1)));
-            pstmt.setInt(3,endPage + (endPage * (nbPage - 1)));
+            pstmt.setInt(2, nbRecordPerPages);
+            pstmt.setInt(3, nbRecordPerPages * (nbPage - 1));
             ResultSet rs = pstmt.executeQuery();
 
             while (rs.next()){
