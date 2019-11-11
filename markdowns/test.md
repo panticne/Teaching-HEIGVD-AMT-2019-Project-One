@@ -6,8 +6,11 @@ Nous avons implémenté une série de test sur :
 
 1. Chacun de nos modèles avec JUnit
 2. Certaines DAO avec Arquillian
+3. HomeServlet avec Mockito
 
 Le but de nos tests est de valider le fait que les méthodes qui ont été implémentée soient fonctionelles.
+
+### Junit
 
 Par exemple nous effectuons des tests afin de créer un de nos modèles. Voici un exemple :
 
@@ -23,6 +26,7 @@ public class TrajetTest {
     }
 }
 ```
+### Arquillian
 
 Les tests avec Arquillian sont plutôt orienté méthode, on va par exemple tester que l'on puisse modifier des vols
 
@@ -43,7 +47,7 @@ Les tests avec Arquillian sont plutôt orienté méthode, on va par exemple test
     }
 ```
 
-Afin de lancer ces tests, il vous faudra lancer les commandes suivantes :
+### Mockito
 
 ### Pagination
 
