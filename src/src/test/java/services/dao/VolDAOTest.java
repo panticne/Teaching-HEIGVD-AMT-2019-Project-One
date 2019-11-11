@@ -70,6 +70,7 @@ public class VolDAOTest {
     @Test
     @Transactional(TransactionMode.ROLLBACK)
     public void itShouldBePossibleToChangeVol() throws SQLException{
+        volDAOLocal.changerVolbyPilote(1, 1, 1 );
         Vol vol = volDAOLocal.getVolById(1);
         Avion actuelAvion = vol.getAvion();
         Trajet actuelTrajet = vol.getTrajet();
@@ -77,6 +78,8 @@ public class VolDAOTest {
         volDAOLocal.changerVolbyPilote(1, 2, 2 );
 
         vol = volDAOLocal.getVolById(1);
+
+
 
         assertNotEquals(actuelAvion.getId(), vol.getAvion().getId());
         assertNotEquals(actuelTrajet.getId(), vol.getTrajet().getId());
