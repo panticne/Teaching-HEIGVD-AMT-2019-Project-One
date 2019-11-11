@@ -18,9 +18,9 @@ Afin de lancer les tests il faut import le certificat avec le script suivant dan
 ```
 ./import.sh
 ```
-Il vous faudra également commenter une ligne dans le Dockerfile dans images/payara et commenter cette ligne
+Il vous faudra également commenter la ligne suivante dans le fichier "post-boot-commands.asadmin" dans images/payara/scripts 
 ```
-ADD deploy/Project-One.war /tmp/Project-One.war
+deploy /tmp/Project-One.war
 ```
 
 Puis lancer
