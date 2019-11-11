@@ -70,3 +70,6 @@ Pour 100 requêtes sans pagination le temps moyen était de 673 ms
 Pour 100 requêtes avec pagination le temps moyen était de 31 ms (on affiche 10 lignes)
 
 Tous ces nombres sont des moyennes de temps d'exécution.
+
+
+Le test dans JMeter a été effectué ainsi, lorsque je testais la pagination, je laissais la commande SQL initiale, lorsque je souhaitais ne pas utiliser de pagination, je supprimais la LIMIT manuellement. On aurait pu faire une méthode uniquement destinée à ça.
