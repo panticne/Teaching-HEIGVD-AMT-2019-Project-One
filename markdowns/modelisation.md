@@ -29,3 +29,40 @@ Grâce au filter, l'utilisateur doit forcément être connecté afin d'accéder 
 On stockera le mot de passe de cette façon sur la base de donnée.
 
 Dans la logique de notre Business domain, nous avons jugé intéressant le droit à l'utilisateur de voir tous les autres vols des autres pilotes, mais seul celui qui a été attribué à un vol peut effectuer des opérations dessus.
+
+Nous avons implémenté la pagination pour "Home" et "Mes Vols", nous l'effectuons de cette façon
+```
+    /**
+     * Permet tous les vols de la base de données selon l'id du pilote avec un système de pagination (max 10 objets par page)
+     * @param piloteId Id du pilote
+     * @param nbPage Numéro de la page que l'on souhaite
+     * @return Liste de vol
+     * @throws SQLException
+     */
+    @Override
+    public List<Vol> getVolByPiloteId(int piloteId , int nbPage) throws SQLException {
+        List<Vol> vols = new ArrayList<Vol>();
+
+        Connection connection = dataSource.getConnection();
+        PreparedStatement pstmt = connection.prepareStatement("SELECT vol.id, pilote_id, prenom, nom, pseudo, motdepasse, avion_id, compagnie, type, trajet_id, depart, arrivee, duree FROM pilote INNER JOIN vol  ON pilote.id = vol.pilote_id INNER JOIN avion ON avion.id = vol.avion_id INNER JOIN trajet ON trajet.id = vol.trajet_id WHERE pilote_id = ? LIMIT ? OFFSET ?");
+        pstmt.setInt(1, piloteId);
+        pstmt.setInt(2, nbRecordPerPages);
+        pstmt.setInt(3, nbRecordPerPages * (nbPage - 1));
+        ResultSet rs = pstmt.executeQuery();
+
+        while (rs.next()){
+            vols.add(
+                new Vol(
+                    rs.getInt("id"),
+                    new Avion(rs.getInt("avion_id"), rs.getString("compagnie"), rs.getString("type")),
+                    new Pilote(rs.getString("prenom"), rs.getString("nom"), rs.getString("pseudo"), rs.getString("motdepasse")),
+                    new Trajet(rs.getInt("trajet_id"), rs.getString("depart"), rs.getString("arrivee"), rs.getInt("duree"))
+                )
+            );
+        }
+
+        connection.close();
+        return vols;
+    }
+```
+
