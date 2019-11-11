@@ -5,9 +5,9 @@ Notre projet consiste en une application permettant à un pilote de gérer ses v
 
 ## Table de matières
 
-[Modélisation](https://github.com/panticne/Teaching-HEIGVD-AMT-2019-Project-One/blob/master/markdowns/modelisation.md)
+[Modélisation et concéption](https://github.com/panticne/Teaching-HEIGVD-AMT-2019-Project-One/blob/master/markdowns/modelisation.md)
 
-[Mise en place](https://github.com/panticne/Teaching-HEIGVD-AMT-2019-Project-One/blob/master/markdowns/run.md)
+[Lancer l'infrastructure](https://github.com/panticne/Teaching-HEIGVD-AMT-2019-Project-One/blob/master/markdowns/run.md)
 
 [Bug](https://github.com/panticne/Teaching-HEIGVD-AMT-2019-Project-One/blob/master/markdowns/run.md)
 
