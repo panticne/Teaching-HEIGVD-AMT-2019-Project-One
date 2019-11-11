@@ -65,4 +65,4 @@ Nous avons implémenté la pagination pour "Home" et "Mes Vols", nous l'effectuo
         return vols;
     }
 ```
-
+La différence de code entre la version paginée et la non-paginée dans la DAO se trouve dans la limitation que nous effectuons lors de la requête SQL, en effet, nous ne sélectionnons que 10 des lignes parmis toutes celles disponible. A chaque fois que l'on avancera d'une page, le pointeur sur le premier élément à afficher avancer également de 10.
