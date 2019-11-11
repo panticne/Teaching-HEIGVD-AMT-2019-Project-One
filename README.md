@@ -11,4 +11,4 @@ Notre projet consiste en une application permettant à un pilote de gérer ses v
 
 [Test](https://github.com/panticne/Teaching-HEIGVD-AMT-2019-Project-One/blob/master/markdowns/test.md)
 
-[Bug](https://github.com/panticne/Teaching-HEIGVD-AMT-2019-Project-One/blob/master/markdowns/run.md)
+[Bug](https://github.com/panticne/Teaching-HEIGVD-AMT-2019-Project-One/blob/master/markdowns/bug.md)
