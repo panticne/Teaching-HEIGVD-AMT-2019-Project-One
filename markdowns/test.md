@@ -47,4 +47,22 @@ Afin de lancer ces tests, il vous faudra lancer les commandes suivantes :
 
 ### Pagination
 
+Afin de tester notre pagination nous avons utilisé JMeter afin de calculer le temps mis par notre solution avec pagination vs celle sans pagination. 
 
+Nous nous sommes donc mis à tester des accès à nos pages et les résultats sont les suivants :
+
+Le nombre d'entrée total étant de 1'000'000.
+
+Pour 100 requêtes sans pagination le temps moyen était de 19698 ms
+
+Pour 100 requêtes avec pagination le temps moyen était de 33 ms (on affiche 10 lignes)
+
+Avec ces résultats nous pouvons très nettement constater l'avantage que offre la pagination lorsque le nombre d'élément à afficher tend vers l'infini.
+
+Pour appuyer ce propos nous avons lancé le même test sur une DB contenant 1000 lignes
+
+Pour 100 requêtes sans pagination le temps moyen était de 673 ms
+
+Pour 100 requêtes avec pagination le temps moyen était de 31 ms (on affiche 10 lignes)
+
+Tous ces nombres sont des moyennes de temps d'exécution.
