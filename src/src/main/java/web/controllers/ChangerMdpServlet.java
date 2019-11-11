@@ -14,10 +14,19 @@ import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ * Ce contrôleur permet de changer le mot de passe
+ */
 public class ChangerMdpServlet extends HttpServlet {
     @EJB
     private PiloteDAOLocal piloteDAOLocal;
 
+    /**
+     * @param request servlet requête
+     * @param response servlet réponse
+     * @throws ServletException la méthode peut retourner une exception de type "Servletexception"
+     * @throws IOException la méthode peut retourner une exception de type "IOException"
+     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -25,6 +34,11 @@ public class ChangerMdpServlet extends HttpServlet {
         request.getRequestDispatcher("/WEB-INF/pages/restreint/changerMdp.jsp").forward(request, response);
     }
 
+    /**
+     * @describe méthode permettant de hasher un mot de passe
+     * @param passwordToHash mot de passe que nous souhaitons hasher
+     * @return le mot de passe chiffré
+     */
     private static String getSecurePassword(String passwordToHash)
     {
         String generatedPassword = null;
@@ -49,6 +63,12 @@ public class ChangerMdpServlet extends HttpServlet {
         return generatedPassword;
     }
 
+    /**
+     * @param request servlet requête
+     * @param response servlet réponse
+     * @throws ServletException la méthode peut retourner une exception de type "Servletexception"
+     * @throws IOException la méthode peut retourner une exception de type "IOException"
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
         boolean ok = false;
         HttpSession session = request.getSession();

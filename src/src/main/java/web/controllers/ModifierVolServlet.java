@@ -16,6 +16,9 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
+/**
+ * Contrôleur permettant de modifier un vol
+ */
 public class ModifierVolServlet extends HttpServlet {
 
     @EJB
@@ -27,6 +30,12 @@ public class ModifierVolServlet extends HttpServlet {
     @EJB
     private TrajetDAOLocal trajetDAOLocal;
 
+    /**
+     * @param request servlet requête
+     * @param response servlet réponse
+     * @throws ServletException la méthode peut retourner une exception de type "Servletexception"
+     * @throws IOException la méthode peut retourner une exception de type "IOException"
+     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -61,6 +70,12 @@ public class ModifierVolServlet extends HttpServlet {
         request.getRequestDispatcher("/WEB-INF/pages/restreint/modifierVol.jsp").forward(request, response);
     }
 
+    /**
+     * @param request servlet requête
+     * @param response servlet réponse
+     * @throws ServletException la méthode peut retourner une exception de type "Servletexception"
+     * @throws IOException la méthode peut retourner une exception de type "IOException"
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
         boolean ok = false;
         int volId = Integer.parseInt(request.getParameter("vol"));

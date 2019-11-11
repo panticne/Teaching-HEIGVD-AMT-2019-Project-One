@@ -6,6 +6,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * Filtre permettant d'empêcher l'accès à des pages sans s'être login
+ */
 public class SecurityFilter implements Filter {
 
     @Override
@@ -13,6 +16,14 @@ public class SecurityFilter implements Filter {
 
     }
 
+    /**
+     *
+     * @param request servlet requête
+     * @param response servlet réponse
+     * @param chain la chaîne de filtrage que l'on applique
+     * @throws ServletException la méthode peut retourner une exception de type "Servletexception"
+     * @throws IOException la méthode peut retourner une exception de type "IOException"
+     */
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         /* Cast des objets request et response */

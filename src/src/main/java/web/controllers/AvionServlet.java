@@ -11,15 +11,22 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-
+/**
+ * Ce contrôleur permet de gérer les avions
+ */
 public class AvionServlet extends HttpServlet {
     @EJB
     private AvionDAOLocal avionDAO;
 
+    /**
+     * @param request servlet requête
+     * @param response servlet réponse
+     * @throws ServletException la méthode peut retourner une exception de type "Servletexception"
+     * @throws IOException la méthode peut retourner une exception de type "IOException"
+     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //response.setContentType("text/html;charset=UTF-8");
         try {
             request.setAttribute("avions", avionDAO.getAllPlane());
         } catch (SQLException e) {

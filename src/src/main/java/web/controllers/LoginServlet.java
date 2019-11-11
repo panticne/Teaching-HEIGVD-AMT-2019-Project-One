@@ -13,11 +13,19 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 
+/**
+ * Contrôleur permettant de se login
+ */
 public class LoginServlet extends HttpServlet {
 
     @EJB
     private PiloteDAOLocal piloteDAO;
 
+    /**
+     * Permet de hasher le mot de passe saisi par l'utilisateur
+     * @param passwordToHash mot de passe saisi par l'utilisateur
+     * @return le mot de passe hashé
+     */
     private static String getSecurePassword(String passwordToHash)
     {
         String generatedPassword = null;
@@ -42,6 +50,12 @@ public class LoginServlet extends HttpServlet {
         return generatedPassword;
     }
 
+    /**
+     * @param req servlet requête
+     * @param resp servlet réponse
+     * @throws ServletException la méthode peut retourner une exception de type "Servletexception"
+     * @throws IOException la méthode peut retourner une exception de type "IOException"
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String pseudo = req.getParameter("pseudo");
@@ -62,6 +76,12 @@ public class LoginServlet extends HttpServlet {
         }
     }
 
+    /**
+     * @param request servlet requête
+     * @param response servlet réponse
+     * @throws ServletException la méthode peut retourner une exception de type "Servletexception"
+     * @throws IOException la méthode peut retourner une exception de type "IOException"
+     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

@@ -15,11 +15,20 @@ import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.SecureRandom;
 
+/**
+ * Contrôleur permettant de s'enregistrer dans la DB
+ */
 public class RegisterServlet extends HttpServlet {
 
     @EJB
     private PiloteDAOLocal piloteDAO;
 
+    /**
+     * @param request servlet requête
+     * @param response servlet réponse
+     * @throws ServletException la méthode peut retourner une exception de type "Servletexception"
+     * @throws IOException la méthode peut retourner une exception de type "IOException"
+     */
     protected void doGet(HttpServletRequest request , HttpServletResponse response)throws ServletException, IOException{
 
         RequestDispatcher req = request.getRequestDispatcher("/WEB-INF/pages/registration.jsp");
@@ -27,6 +36,11 @@ public class RegisterServlet extends HttpServlet {
 
     }
 
+    /**
+     * Permet de sécuriser le mot de passe
+     * @param passwordToHash mot de passe que l'on veut hasher
+     * @return le mot de passe hashé
+     */
     private static String getSecurePassword(String passwordToHash)
     {
         String generatedPassword = null;
@@ -51,6 +65,12 @@ public class RegisterServlet extends HttpServlet {
         return generatedPassword;
     }
 
+    /**
+     * @param request servlet requête
+     * @param response servlet réponse
+     * @throws ServletException la méthode peut retourner une exception de type "Servletexception"
+     * @throws IOException la méthode peut retourner une exception de type "IOException"
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
 
         String prenom = request.getParameter("prenom");

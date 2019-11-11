@@ -17,6 +17,9 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
+/**
+ * Cette classe joue le rôle de contrôleur afin de gérer l'ajout de vol
+ */
 public class AjouterVolServlet extends HttpServlet {
 
     @EJB
@@ -28,11 +31,16 @@ public class AjouterVolServlet extends HttpServlet {
     @EJB
     private VolDAOLocal volDAOLocal;
 
-
+    /**
+     *
+     * @param request servlet requête
+     * @param response servlet réponse
+     * @throws ServletException la méthode peut retourner une exception de type "Servletexception"
+     * @throws IOException la méthode peut retourner une exception de type "IOException"
+     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //response.setContentType("text/html;charset=UTF-8");
         HttpSession session = request.getSession();
         int pilotId = (int)session.getAttribute("id");
         List<Avion> avions = null;
@@ -50,6 +58,12 @@ public class AjouterVolServlet extends HttpServlet {
     }
 
 
+    /**
+     * @param request servlet requête
+     * @param response servlet réponse
+     * @throws ServletException la méthode peut retourner une exception de type "Servletexception"
+     * @throws IOException la méthode peut retourner une exception de type "IOException"
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
         int piloteId = Integer.parseInt(request.getParameter("piloteId"));
         int avionId = Integer.parseInt(request.getParameter("avion"));
