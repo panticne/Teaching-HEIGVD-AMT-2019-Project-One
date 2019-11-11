@@ -19,6 +19,12 @@ public class AvionDAO implements AvionDAOLocal {
     @Resource(lookup = "jdbc/dbVol")
     private DataSource dataSource;
 
+    /**
+     * Permet de récupérer tous les avions de la base de données
+     * @return List d'avion
+     * @throws SQLException
+     */
+    @Override
     public List<Avion> getAllPlane() throws SQLException{
         List<Avion> planes = new ArrayList<>();
         Connection connection = dataSource.getConnection();
@@ -33,6 +39,13 @@ public class AvionDAO implements AvionDAOLocal {
         return planes;
     }
 
+    /**
+     * Permet de récupérer un avion de la base de données selon son Id
+     * @param id Id de l'avion à récupérer
+     * @return Avion
+     * @throws SQLException
+     */
+    @Override
     public Avion getAvionById(int id) throws SQLException{
         Avion avion = null;
         try {

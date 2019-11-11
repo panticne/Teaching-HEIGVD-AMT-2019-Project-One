@@ -15,6 +15,11 @@ public class TrajetDAO implements TrajetDAOLocal {
     @Resource(lookup = "jdbc/dbVol")
     private DataSource dataSource;
 
+    /**
+     * Permet de récupérer un trajet selon son Id
+     * @param id Id du trajet
+     * @return Trajet
+     */
     @Override
     public Trajet getTrajetById(int id) {
         Trajet trajet = null;
@@ -33,6 +38,10 @@ public class TrajetDAO implements TrajetDAOLocal {
         return trajet;
     }
 
+    /**
+     * Permet de récupérer tous les trajets de la base de données
+     * @return Liste de trajet
+     */
     @Override
     public List<Trajet> getAllTrajet() {
         List<Trajet> trajets = new ArrayList<>();

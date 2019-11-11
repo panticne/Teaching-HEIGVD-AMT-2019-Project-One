@@ -22,7 +22,7 @@ public class Avion {
 
     /**
      * Permet de récupérer la compagnie de l'avion
-     * @return
+     * @return Compagnie
      */
     public String getCompagnie() {
         return compagnie;
@@ -30,7 +30,7 @@ public class Avion {
 
     /**
      * Permet de récupérer le type de l'avion
-     * @return
+     * @return Type
      */
     public String getType() {
         return type;
@@ -38,7 +38,7 @@ public class Avion {
 
     /**
      * Permet de récupérer l'id de l'avion
-     * @return
+     * @return Id
      */
     public int getId() {
         return id;

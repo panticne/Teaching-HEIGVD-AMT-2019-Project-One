@@ -20,11 +20,18 @@ public class PiloteDAO implements PiloteDAOLocal {
     @Resource(lookup = "jdbc/dbVol")
     private DataSource dataSource;
 
+    /**
+     * Permet d'ajouter une utilisateur dans la base de données
+     * @param pilote Pilote à ajouter dans la base de données
+     * @return Int qui permet de vérifier si l'insertion à fonctionner
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     */
     @Override
     public int registerPilote(Pilote pilote) throws ClassNotFoundException, SQLException {
-       String INSERT_PILOTE_SQL = "INSERT INTO pilote (prenom,nom,pseudo,motdepasse) VALUES (?, ?, ?, ?);";
+        String INSERT_PILOTE_SQL = "INSERT INTO pilote (prenom,nom,pseudo,motdepasse) VALUES (?, ?, ?, ?);";
 
-       int result = 0;
+        int result = 0;
 
         Connection connection = dataSource.getConnection();
         PreparedStatement pstmt = connection.prepareStatement(INSERT_PILOTE_SQL);
@@ -37,9 +44,12 @@ public class PiloteDAO implements PiloteDAOLocal {
         result = pstmt.executeUpdate();
 
         return result;
-
     }
 
+    /**
+     * Permet de récupérer tous les pilotes de la base de données
+     * @return Liste de pilote
+     */
     @Override
     public List<Pilote> getAllPilotes(){
         List<Pilote> pilotes = new ArrayList<>();
@@ -59,6 +69,13 @@ public class PiloteDAO implements PiloteDAOLocal {
         return pilotes;
     }
 
+    /**
+     * Permet de vérifier que le pseudo et mot de passe de l'utilisateur lors du login
+     * @param pseudo2 Pseudo du pilote
+     * @param motdepasse Mot de passe du pilote
+     * @return Boolean qui permet de valider le login ou non
+     * @throws SQLException
+     */
     @Override
     public boolean loginControl(String pseudo2, String motdepasse) throws SQLException {
         String INSERT_PILOTE_SQL = "SELECT pseudo,motdepasse FROM pilote WHERE pseudo =?";
@@ -88,6 +105,12 @@ public class PiloteDAO implements PiloteDAOLocal {
         return result;
     }
 
+    /**
+     * Permet de récupérer l'id du pilote
+     * @param pseudo Pseudo du pilote
+     * @param mdp Mot de passe du pilote
+     * @return Id du pilote
+     */
     @Override
     public int getPiloteId(String pseudo, String mdp){
         int id = 0;
@@ -108,6 +131,11 @@ public class PiloteDAO implements PiloteDAOLocal {
         return id;
     }
 
+    /**
+     * Permet de récupérer un pilote selon son Id
+     * @param pilotId Id du pilote
+     * @return Pilote
+     */
     @Override
     public Pilote getPiloteById(int pilotId){
         Pilote pilote = null;
@@ -127,6 +155,14 @@ public class PiloteDAO implements PiloteDAOLocal {
         return pilote;
     }
 
+    /**
+     * Permet de changer le mot de passe du pilote avec vérification
+     * @param id Id du pilote
+     * @param oldPassword Ancien mot de passe
+     * @param newPassword Nouveau mot de passe
+     * @param confirmPassword Confirmation du nouveau mot de passe
+     * @return Boolean qui permet de valider le changement ou non
+     */
     @Override
     public boolean changePassword(int id, String oldPassword, String newPassword, String confirmPassword) {
         try {

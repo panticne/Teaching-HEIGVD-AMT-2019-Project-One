@@ -21,6 +21,11 @@ public class VolDAO implements VolDAOLocal{
 
     private int nbRecordPerPages = 10;
 
+    /**
+     * Permet de récupérer le nombre de vols total dans la base de données
+     * @return Nombre total de vols
+     * @throws SQLException
+     */
     @Override
     public int getNbTotalVols() throws SQLException {
         int nbVol = 0;
@@ -34,6 +39,12 @@ public class VolDAO implements VolDAOLocal{
         return nbVol;
     }
 
+    /**
+     * Permet de récupérer tous les vols de la base de données avec un système de pagination (max 10 objets par page)
+     * @param nbPage Numéro de la page que l'on souhaite
+     * @return Liste de vol
+     * @throws SQLException
+     */
     @Override
     public List<Vol> getAllVols(int nbPage) throws SQLException{
         List<Vol> vols = new ArrayList<Vol>();
@@ -57,6 +68,13 @@ public class VolDAO implements VolDAOLocal{
         return vols;
     }
 
+    /**
+     * Permet tous les vols de la base de données selon l'id du pilote avec un système de pagination (max 10 objets par page)
+     * @param piloteId Id du pilote
+     * @param nbPage Numéro de la page que l'on souhaite
+     * @return Liste de vol
+     * @throws SQLException
+     */
     @Override
     public List<Vol> getVolByPiloteId(int piloteId , int nbPage) throws SQLException {
         List<Vol> vols = new ArrayList<Vol>();
@@ -83,6 +101,12 @@ public class VolDAO implements VolDAOLocal{
         return vols;
     }
 
+    /**
+     * Permet de récupérer le nombre de vols selon l'id du pilote
+     * @param piloteId Id du pilote
+     * @return Nombre de vols
+     * @throws SQLException
+     */
     @Override
     public int getNbVolByPiloteId(int piloteId) throws SQLException{
         int nbVol = 0;
@@ -96,6 +120,11 @@ public class VolDAO implements VolDAOLocal{
         return nbVol;
     }
 
+    /**
+     * Permet de supprimet un vol selon son Id
+     * @param volId Id du vol
+     * @throws SQLException
+     */
     @Override
     public void deleteVolById(int volId) throws SQLException{
         String query = "DELETE FROM vol where id = ?";
@@ -106,6 +135,12 @@ public class VolDAO implements VolDAOLocal{
         connection.close();
     }
 
+    /**
+     * Permet de récupérer un vol selon son Id
+     * @param volId Id du vol
+     * @return Vol
+     * @throws SQLException
+     */
     @Override
     public Vol getVolById(int volId) throws SQLException {
         Vol vol = null;
@@ -129,6 +164,13 @@ public class VolDAO implements VolDAOLocal{
         return vol;
     }
 
+    /**
+     * Permet de modifier le vol d'un pilote
+     * @param volId Id du vol
+     * @param avionId Id du nouvel avion
+     * @param trajetId Id du nouveau trajet
+     * @throws SQLException
+     */
     @Override
     public void changerVolbyPilote(int volId, int avionId, int trajetId) throws SQLException{
         Connection connection = dataSource.getConnection();
@@ -141,6 +183,13 @@ public class VolDAO implements VolDAOLocal{
         connection.close();
     }
 
+    /**
+     * Permet d'ajouter un vol dans la base de données
+     * @param piloteId Id du pilote
+     * @param avionId Id de l'avion
+     * @param trajetId Id du trajet
+     * @throws SQLException
+     */
     @Override
     public void ajouterVol(int piloteId, int avionId, int trajetId) throws SQLException{
         String query = "INSERT INTO vol VALUES(NULL, ?, ?, ?)";
@@ -153,6 +202,11 @@ public class VolDAO implements VolDAOLocal{
         connection.close();
     }
 
+    /**
+     * Fonction implémentée pour les tests de la classe : permet de récupérer tous les vols de la base de données
+     * @return Liste de vol
+     * @throws SQLException
+     */
     @Override
     public List<Vol> getAllVolsTest() throws SQLException {
         List<Vol> vols = new ArrayList<Vol>();
