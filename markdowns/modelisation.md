@@ -20,7 +20,7 @@ La page "Mes Vols" affiche tous les vols du pilote qui est actuellement connect�
 
 Par rapport à ce qui a été demandé nous permettons la modification, suppression et ajout de vol par l'utilisateur, il ne peut cependant pas modifier des informations sur un avion, un trajet. Par rapport à lui-même, le pilote peut modifier son mot de passe.
 
-La navigation entre les pages est assez intuitive et a été implémentée dans le fichier "header.jsp" que l'on inclut dans chaque page jsp mise à disposition de l'utilisateur connecté.
+La navigation entre les pages est assez intuitive et a été implémentée dans le fichier "nav.jsp" que l'on inclut dans chaque page jsp mise à disposition de l'utilisateur connecté.
 
 Grâce au filter, l'utilisateur doit forcément être connecté afin d'accéder à des données. Lors de la création du compte depuis la page "Register", le mot de passe est chiffré en SHA256 et va effectuer les opérations suivantes :
 
