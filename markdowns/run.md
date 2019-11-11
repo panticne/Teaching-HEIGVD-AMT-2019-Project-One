@@ -1,21 +1,17 @@
 # Teaching-HEIGVD-AMT-2019-Project-One
 
-## Run project
+## Bug
 
-Pour générer le .sql vous pouvez vous rendre dans le dossier /mysql-dummy-data et lancer cette commande
-```
-python main.py mysqldump_dump.sql --rows 1000000 --output ../data/output.sql
-```
-Vous pouvez spécifier le nombre de lignes à insérer à la suite --rows
+Nous avons rencontré un bug lorsque nous essayons d'accéder à
 
-Pour lancer l'infrastructure il vous suffit de vous rendre sur /topology-amt et de lancer la commande
-
-```
-docker-compose up --build
-```
-Vous aurez à ce moment une base de données SQL qui va se peupler toute seule ainsi qu'un serveur payara qui va charger notre application qui sera accessible à l'adresse
 ```
 http://localhost:8080/Project-One
 ```
 
-Source : https://github.com/peterg98/mysql-dummy-data
+Parfois, à cause de notre implémentation, localhost ne sera pas accepté et vous devrez rentrer l'ip de votre machine
+
+```
+http://<votre_ip>:8080/Project-One
+```
+
+Cette solution a été discuté avec M.Olivier Liechti
