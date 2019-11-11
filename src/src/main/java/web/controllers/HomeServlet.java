@@ -18,7 +18,7 @@ import java.util.List;
 public class HomeServlet extends HttpServlet {
 
     @EJB
-    private VolDAOLocal volDAO;
+    VolDAOLocal volDAO;
     private double nbRecordPerPage = 10;
     private double page = 1;
 

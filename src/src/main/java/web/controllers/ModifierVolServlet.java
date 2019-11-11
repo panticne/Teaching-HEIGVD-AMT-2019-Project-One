@@ -4,6 +4,7 @@ import model.Avion;
 import model.Trajet;
 import model.Vol;
 import services.dao.AvionDAOLocal;
+import services.dao.PiloteDAOLocal;
 import services.dao.TrajetDAOLocal;
 import services.dao.VolDAOLocal;
 
@@ -12,6 +13,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
@@ -29,6 +31,9 @@ public class ModifierVolServlet extends HttpServlet {
 
     @EJB
     private TrajetDAOLocal trajetDAOLocal;
+
+    @EJB
+    private PiloteDAOLocal piloteDAOLocal;
 
     /**
      * @param request servlet requête
@@ -77,14 +82,27 @@ public class ModifierVolServlet extends HttpServlet {
      * @throws IOException la méthode peut retourner une exception de type "IOException"
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
-        boolean ok = false;
         int volId = Integer.parseInt(request.getParameter("vol"));
         int avionId = Integer.parseInt(request.getParameter("avion"));
         int trajetId = Integer.parseInt(request.getParameter("trajet"));
+
+        HttpSession session = request.getSession();
+        int pilotId = (int)session.getAttribute("id");
+        Vol vol = null;
         try {
-            volDAO.changerVolbyPilote(volId, avionId, trajetId);
-        }catch (Exception e){
+            vol = volDAO.getVolById(volId);
+        } catch (SQLException e) {
             e.printStackTrace();
+        }
+
+        int volPiloteId = piloteDAOLocal.getPiloteId(vol.getPilote().getPseudo(), vol.getPilote().getMotdepasse());
+
+        if(volPiloteId == pilotId) {
+            try {
+                volDAO.changerVolbyPilote(volId, avionId, trajetId);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
 
         response.sendRedirect("/Project-One/pages/mesVols");
