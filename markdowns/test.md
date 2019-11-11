@@ -44,3 +44,7 @@ Les tests avec Arquillian sont plutôt orienté méthode, on va par exemple test
 ```
 
 Afin de lancer ces tests, il vous faudra lancer les commandes suivantes :
+
+### Pagination
+
+
