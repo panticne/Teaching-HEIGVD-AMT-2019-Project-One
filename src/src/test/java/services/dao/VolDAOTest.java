@@ -1,7 +1,6 @@
 package services.dao;
 
 import model.Avion;
-import model.Pilote;
 import model.Trajet;
 import model.Vol;
 import org.arquillian.container.chameleon.deployment.api.DeploymentParameters;

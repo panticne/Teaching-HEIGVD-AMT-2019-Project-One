@@ -3,5 +3,5 @@
 create-jdbc-connection-pool --restype javax.sql.DataSource --datasourceclassname com.mysql.cj.jdbc.MysqlXADataSource --property 'user=user:password=password:url=jdbc\:mysql\://db\:3306/dbVol:useSSL=false' dbVol
 
 create-jdbc-resource --connectionpoolid dbVol jdbc/dbVol
-#deploy /tmp/Project-One.war
+deploy /tmp/Project-One.war
 
